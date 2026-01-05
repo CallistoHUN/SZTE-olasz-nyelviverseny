@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "title": "SZTE Olasz nyelvi verseny - Pályamunka",
+    "description": "Kreatív pályamunka a 2025-26-os évi SZTE Olasz nyelvi verseny második fordulójára. Feldolgozott olvasmány: Mistero in Via dei Tulipani. Készítette: Novográdecz Damján."
+  },
+  "lang": {
+    "hu": "HU",
+    "it": "IT"
+  },
+  "nav": {
+    "home": "Kezdőlap",
+    "story": "Történet",
+    "characters": "Szereplők",
+    "quiz": "Quiz",
+    "about": "Rólam"
+  },
+  "img": {
+    "logo_alt": "Weboldal logó",
+    "banner_alt": "Gyanús autó éjszaka banner"
+  },
+  "section": {
+    "ajanlo": {
+      "title": "Könyvajánló",
+      "body": "Ez a könyv egy krimi. Szereted a krimiket? Ajánlom neked ezt a könyvet, ha szeretsz olvasni idegen nyelven. Tökéletes a gyakorlásra és új szavak tanulására. Ha nem tanulod a nyelvet régóta, ne aggódj, mert ezt a könyvet azoknak írták, akik csak egy-két éve kezdték az olaszt. Sok spoiler található ezen az oldalon, így ha szeretnéd elolvasni a könyvet, <a href=\"tortenet.html\">kattints ide</a>!"
+    },
+    "story": {
+      "title": "Történet",
+      "body": "A könyv egy kitalált történetet mesél el. A főszereplők Giacomo és Simona, egy fiú és egy lány. A Tulipán utcában egy gyilkosság történik: Szombat reggel Valle kisasszony találja meg Cassi úr holttesttét – ő egy furcsa, alacsony és sovány férfia, aki mindig nagyon hangosan hallgat zenét. A rendőrség Cassi úr barátait gyanúsítja, de Giacomo és Simona szerint Cassit a szomszédaik egyike ölhette meg. Ezért nyomozásba kezdenek. Giacomo terve hatékony: Az összes szomszéduktól cukrot kérnek. És így tudnak információkat gyűjteni. Kettő gyanús személyt találnak: Bianchi asszonyt és Moreno urat. Giacomo úgy dönt, éjszakára lemegy a kertbe és kellő ideig ott marad. Nézi ki jön be-ki. És meglepetéssel látja, hogy Bianchi asszony és Moreno úr megölelik egymást. Hiszen ők szeretők!<br>Éjjel egykor Giacomo észreveszi Morena urat egy sporttáskával. A férfit a garázsba követi. És a táskában megtalálja a gyilkos fegyvert: egy szobrocskát! Giacomo megpróbál gyorsan elfutni, de egy csak egy pillanat, és a fiú eszméletlenül a földre zuhan.<br>Mi történt azután? Figyelem: Még van csavar a történetben! Olvasd el a teljes összefoglalót <a href=\"tortenet.html\">itt</a>!"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Novográdecz Damján"
+  }
+  ,
+  "banner": {
+    "title": "Mistero in Via dei Tulipani",
+    "subtitle": "Nem minden szomszéd ártatlan.",
+    "cta": "Fedezd fel a történetet"
+  }
+  ,
+  "tabs": {
+    "storia": {
+      "title": "Történet",
+      "body": "Ezen az oldalon a történet egy részletes összefoglalóját találod. Csináltam egy timeline-t is és beraktam képeket is, hogy jobban lehessen követni a történetet."
+    },
+    "personaggi": {
+      "title": "Szereplők",
+      "body": "Az oldalon a szereplők elemzése található. Hogy néz ki – alakja, haja, szeme... Milyen a személyisége – félénk, eszes, ügyes... Ezenkívül láthatod a kapcsolatait més személyekkel – szeretők, barátok, ellenségek..."
+    },
+    "quiz": {
+      "title": "Quiz",
+      "body": "Ha már elolvastad a könyvet vagy ezt a Mistero in Via dei Tulipani oldalt, akkor megtudsz csinálni egy kvízt, hogy teszteld a tudásodat, mennyire figyelmesen olvastad el a könyvet. Sok különböző feladatot csináltam."
+    },
+    "chisono": {
+      "title": "Rólam",
+      "body": "Egy extra oldal, ahol információkat találsz a projektről, rólam, és a munka forrásairól."
+    }
+  }
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SZTE Olasz nyelvi verseny - Pályamunka</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Kreatív pályamunka a 2025-26-os évi SZTE Olasz nyelvi verseny második fordulójára. Feldolgozott olvasmány: Mistero in Via dei Tulipani. Készítette: Novográdecz Damján.">
+    <script src="i18n.js" defer></script>
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+        window.addEventListener('DOMContentLoaded', () => window.scrollTo(0, 0));
+        window.addEventListener('load', () => window.scrollTo(0, 0));
+    </script>
+
+    <script>
+        (() => {
+            const infoTabs = document.querySelector('.info-tabs');
+            if (!infoTabs) return;
+
+            const panel = infoTabs.querySelector('.info-panel');
+            const panelInner = infoTabs.querySelector('.panel-inner');
+            const cards = Array.from(infoTabs.querySelectorAll('.info-card'));
+
+            const descriptions = {
+                storia: '<strong>Storia</strong>: Riassunto della trama e i punti salienti della storia.',
+                personaggi: '<strong>Personaggi</strong>: Breve descrizione dei protagonisti e dei loro ruoli.',
+                quiz: '<strong>Quiz</strong>: Domande per mettere alla prova la tua comprensione del testo.',
+                chisono: '<strong>Chi sono</strong>: Informazioni sull\'autore e il contesto del lavoro.'
+            };
+
+            let openTimeout;
+
+            const openPanel = (key) => {
+                panelInner.innerHTML = descriptions[key] || '';
+                panel.classList.add('open');
+                panel.setAttribute('aria-hidden', 'false');
+            };
+
+            const closePanel = () => {
+                panel.classList.remove('open');
+                panel.setAttribute('aria-hidden', 'true');
+            };
+
+            cards.forEach(card => {
+                const key = card.dataset.key;
+                card.addEventListener('mouseenter', () => {
+                    clearTimeout(openTimeout);
+                    openPanel(key);
+                });
+                card.addEventListener('focus', () => openPanel(key));
+                card.addEventListener('mouseleave', () => {
+                    // delay closing slightly to allow moving to panel
+                    openTimeout = setTimeout(() => {
+                        if (!panel.matches(':hover')) closePanel();
+                    }, 120);
+                });
+            });
+
+            // keep panel open when hovering panel; close when leaving both
+            panel.addEventListener('mouseleave', () => {
+                openTimeout = setTimeout(() => closePanel(), 120);
+            });
+            panel.addEventListener('mouseenter', () => clearTimeout(openTimeout));
+
+            // close on Escape
+            document.addEventListener('keydown', (ev) => {
+                if (ev.key === 'Escape') closePanel();
+            });
+        })();
+    </script>
+
+    <script>
+        // Tabbed two-row content switching
+        (function () {
+            const init = () => {
+                const table = document.querySelector('.tab-table');
+                if (!table) return;
+                const buttons = Array.from(table.querySelectorAll('.tab-btn'));
+                const contents = Array.from(table.querySelectorAll('.tab-content'));
+
+                const setActive = (index) => {
+                    buttons.forEach((b, i) => {
+                        const sel = i === index;
+                        b.setAttribute('aria-selected', sel ? 'true' : 'false');
+                    });
+                    contents.forEach((c, i) => {
+                        if (i === index) {
+                            c.hidden = false;
+                        } else {
+                            c.hidden = true;
+                        }
+                    });
+                    table.style.setProperty('--active-index', String(index));
+                };
+
+                buttons.forEach((btn, idx) => {
+                    btn.addEventListener('click', () => setActive(idx));
+                    btn.addEventListener('keydown', (e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            setActive(idx);
+                        }
+                        if (e.key === 'ArrowRight') {
+                            e.preventDefault();
+                            const next = (idx + 1) % buttons.length;
+                            buttons[next].focus();
+                            setActive(next);
+                        }
+                        if (e.key === 'ArrowLeft') {
+                            e.preventDefault();
+                            const prev = (idx - 1 + buttons.length) % buttons.length;
+                            buttons[prev].focus();
+                            setActive(prev);
+                        }
+                    });
+                });
+
+                // initial
+                setActive(0);
+            };
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', init);
+            } else {
+                init();
+            }
+        })();
+    </script>
+
+    
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-logo" id="headerLogo">
+            <img src="logo.png" alt="Weboldal logó" data-i18n-attr="alt:img.logo_alt" style="width: 600px; height: auto;">
+        </div>
+        <div class="header-menu" id="headerMenu">
+            <a href="index.html" class="menu-link" data-i18n="nav.home">Kezdőlap</a>
+            <a href="tortenet.html" class="menu-link" data-i18n="nav.story">Történet</a>
+            <a href="szereplok.html" class="menu-link" data-i18n="nav.characters">Szereplők</a>
+            <a href="quiz.html" class="menu-link" data-i18n="nav.quiz">Quiz</a>
+            <a href="rolam.html" class="menu-link" data-i18n="nav.about">Rólam</a>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" class="lang-btn" data-set-lang="hu" data-i18n="lang.hu" aria-pressed="true">HU</button>
+                <button type="button" class="lang-btn" data-set-lang="it" data-i18n="lang.it" aria-pressed="false">IT</button>
+            </div>
+        </div>
+    </header>
+        <main>
+        <div class="banner">
+            <img src="kepauto.jpg" alt="Gyanús autó éjszaka banner" data-i18n-attr="alt:img.banner_alt" style="width: 100%; max-width: 100%; border: 2px solid #c1a577;">
+            <div class="banner-overlay" aria-hidden="true">
+                <h1 class="banner-title" data-i18n="banner.title">Mistero in Via dei Tulipani</h1>
+                <div class="banner-panel">
+                    <div class="banner-text">
+                        <p class="banner-sub" data-i18n="banner.subtitle">Non tutti i vicini sono innocenti.</p>
+                    </div>
+                    <a class="banner-cta" href="tortenet.html" data-i18n="banner.cta">Scopri la storia</a>
+                </div>
+            </div>
+        </div>
+        <section class="section-ajanlo">
+            <div class="content">
+                <h2 class="section-title" data-i18n="section.ajanlo.title">Könyvajánló</h2>
+                <p data-i18n-html="section.ajanlo.body">Ez a könyv egy izgalmas történetet mesél el, amely tele van rejtélyekkel és fordulatokkal. Ideális olvasmány mindazok számára, akik szeretik a krimiket és a váratlan csavarokat.</p>
+            </div>
+            <img src="konyv.jpeg" alt="Könyvajánló borító">
+        </section>
+        <section class="section-story">
+            <img src="konyvajanlo.jpg" alt="Könyvajánló borító">
+            <div class="content">
+                <h2 class="section-title" data-i18n="section.story.title">Történet</h2>
+                <div class="content-body" data-i18n-html="section.story.body"></div>
+            </div>
+        </section>
+        <!-- New two-row tabbed table: top row buttons, bottom row single content cell -->
+        <section class="tabbed-info" aria-label="Történet kiegészítő információk">
+            <div class="tab-table" role="tablist" aria-label="Story tabs">
+                <div class="tab-row tab-top" role="presentation">
+                    <button class="tab-btn" role="tab" data-key="storia" aria-selected="true"><span class="tab-label" data-i18n="tabs.storia.title">Storia</span></button>
+                    <button class="tab-btn" role="tab" data-key="personaggi" aria-selected="false"><span class="tab-label" data-i18n="tabs.personaggi.title">Personaggi</span></button>
+                    <button class="tab-btn" role="tab" data-key="quiz" aria-selected="false"><span class="tab-label" data-i18n="tabs.quiz.title">Quiz</span></button>
+                    <button class="tab-btn" role="tab" data-key="chisono" aria-selected="false"><span class="tab-label" data-i18n="tabs.chisono.title">Chi sono</span></button>
+                </div>
+
+                <div class="tab-separator" aria-hidden="true">
+                    <span class="tab-sep-line"></span>
+                    <span class="tab-arrow" aria-hidden="true"></span>
+                </div>
+
+                <div class="tab-row tab-bottom" role="region">
+                    <div class="tab-contents">
+                        <div class="tab-content" data-key="storia" data-i18n-html="tabs.storia.body"></div>
+                        <div class="tab-content" data-key="personaggi" data-i18n-html="tabs.personaggi.body" hidden></div>
+                        <div class="tab-content" data-key="quiz" data-i18n-html="tabs.quiz.body" hidden></div>
+                        <div class="tab-content" data-key="chisono" data-i18n-html="tabs.chisono.body" hidden></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="full-bleed-image" aria-hidden="true">
+            <img src="footerimg.jpg" alt="Dekoratív lábléc kép" class="full-bleed-img">
+        </div>
+
+            <footer class="site-footer" role="contentinfo">
+                <div class="site-footer-inner">
+                    <p class="footer-text">&copy; Novográdecz Damján — Pannonhalma 2025-26</p>
+                </div>
+            </footer>
+    </main>
+
+    
+
+    <script>
+        (() => {
+            const header = document.querySelector('.main-header');
+            if (!header) return;
+
+            const setHeaderOffset = () => {
+                const h = Math.ceil(header.getBoundingClientRect().height);
+                document.body.style.setProperty('--header-offset', `${h}px`);
+            };
+
+            const updateScrolledState = () => {
+                const isScrolled = window.scrollY > 10;
+                header.classList.toggle('scrolled', isScrolled);
+                setHeaderOffset();
+            };
+
+            let ticking = false;
+            const onScroll = () => {
+                if (ticking) return;
+                ticking = true;
+                window.requestAnimationFrame(() => {
+                    updateScrolledState();
+                    ticking = false;
+                });
+            };
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', setHeaderOffset);
+
+            updateScrolledState();
+        })();
+    </script>
+
+    <script>
+        (() => {
+            const banner = document.querySelector('.banner');
+            const overlay = banner ? banner.querySelector('.banner-overlay') : null;
+            if (!banner) return;
+
+            const threshold = 80; // px scrolled before showing overlay
+
+            const update = () => {
+                const show = window.scrollY > threshold;
+                document.body.classList.toggle('banner-visible', show);
+                if (overlay) overlay.setAttribute('aria-hidden', String(!show));
+            };
+
+            window.addEventListener('scroll', () => window.requestAnimationFrame(update), { passive: true });
+            window.addEventListener('resize', update);
+            update();
+        })();
+    </script>
+
+    <script>
+        (() => {
+            const banner = document.querySelector('.banner');
+            const overlay = banner ? banner.querySelector('.banner-overlay') : null;
+            if (!banner) return;
+
+            const threshold = 80; // px scrolled before showing overlay
+            let ticking = false;
+
+            const update = () => {
+                const show = window.scrollY > threshold;
+                document.body.classList.toggle('banner-visible', show);
+                if (overlay) overlay.setAttribute('aria-hidden', String(!show));
+            };
+
+            const onScroll = () => {
+                if (ticking) return;
+                ticking = true;
+                window.requestAnimationFrame(() => {
+                    update();
+                    ticking = false;
+                });
+            };
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', update);
+            update();
+        })();
+    </script>
+
+    
+
+</body>
+</html>

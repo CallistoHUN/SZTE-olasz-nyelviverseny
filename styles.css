@@ -1,7 +1,29 @@
+.story-layout {
+	display: flex;
+	align-items: flex-start;
+	gap: 32px;
+	padding-top: 220px; /* large empty area above both */
+	width: 100%;
+}
+.timeline-img-wrapper {
+	flex: 0 0 260px;
+	display: block;
+}
+.timeline-right {
+	display: block;
+	width: 220px;
+	max-width: 100%;
+	height: auto;
+	box-shadow: 0 18px 42px rgba(0,0,0,0.20);
+	background: white;
+	border-radius: 8px;
+	transition: box-shadow 220ms ease, transform 220ms ease;
+}
 :root {
 	--bg: #ffffff;
 	--header-bg: #fffcfc;
 	--accent: #4a9eff;
+	--overlay-gray: #869193;
 	--text-primary: #232323;
 	--text-secondary: #869193;
 	--font-heading: 'Cormorant', sans-serif;
@@ -9,6 +31,72 @@
 	--page-margin: 40px;
 	--footer-overlap: 80px; /* how much image extends under the footer */
 }
+.timeline-img-wrapper {
+	position: relative;
+	width: auto;
+	min-height: 1px;
+}
+.timeline-right {
+	position: static; /* keep in document flow so page scrolls to its bottom */
+	display: block;
+	width: 220px;
+	max-width: 100%;
+	height: auto;
+	box-shadow: none; /* no shadow */
+	background: white;
+	border-radius: 8px;
+	border-left: 1px solid #000; /* thin black left-side line */
+	margin-right: calc(-1 * var(--page-margin, 40px)); /* push visually to viewport edge */
+	transition: transform 160ms ease;
+}
+
+.story-tabs {
+	width: 100%;
+	margin: 140px 0 20px 0;
+	background: transparent; /* remove outer white rectangle */
+	padding: 0;
+	box-shadow: none;
+	border-radius: 0;
+}
+.story-panel {
+	padding: 24px;
+	border-radius: 8px;
+	background: transparent; /* no solid white background */
+	box-shadow: 0 8px 20px rgba(0,0,0,0.10); /* reduced shadow radius */
+	border: 1px solid rgba(0,0,0,0.06);
+	backdrop-filter: blur(4px);
+	transition: box-shadow 220ms ease, transform 220ms ease;
+	flex: 1 1 auto;
+}
+.story-panel h2 {
+	margin: 0 0 12px 0;
+	font-family: var(--font-heading);
+	font-size: 28px;
+}
+.story-panel-body {
+	min-height: 160px;
+	color: var(--text-primary);
+	line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+		.story-layout { display: block; padding-top: 28px; }
+		.story-panel { margin: 0 0 16px 0; }
+		.timeline-img-wrapper { width: 100%; }
+		.timeline-right { width: 100%; }
+}
+
+.story-panel:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 12px 28px rgba(0,0,0,0.14);
+}
+
+.timeline-right:hover {
+	transform: translateY(-2px);
+	box-shadow: none;
+}
+
+:root {
 
 * { box-sizing: border-box; }
 
@@ -418,8 +506,11 @@ body {
 	opacity: 0;
 	transform: translateY(-10px);
 	pointer-events: none;
-}
+	background: transparent; /* remove solid white background */
+	border: 1px solid rgba(0,0,0,0.06); /* keep rectangular outline */
+	backdrop-filter: blur(6px);
 
+}
 .main-header.scrolled .header-menu {
 	gap: 5rem;
 	--menu-pad-y: 25px;
@@ -913,4 +1004,118 @@ section .content {
 	.tab-separator { height: 12px; }
 	.tab-table[style] .tab-arrow { left: calc( (var(--active-index, 0) * 100%) + 50% - 10px ); }
 	.tab-bottom { height: auto; }
+}
+
+/* Centered very long thin vertical line for `tortenet.html` */
+.page-main {
+		padding: 0; /* spacing handled by header-spacer */
+	display: block;
+	text-align: center; /* center the container horizontally */
+}
+/* Large empty spacer under header on the story page */
+.header-spacer {
+	width: 100%;
+	/* slightly reduced height */
+	height: min(25vh, 400px);
+	display: block;
+}
+
+/* Fixed bottom cover (takaró) placed above all content */
+.page-cover {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 220px; /* default height; adjust as needed */
+	background: url('takaro.png') center/cover no-repeat;
+	pointer-events: none; /* let clicks pass through */
+	z-index: 2147483646; /* very high, but allow browser UI above */
+}
+.vertical-line-container {
+	--branch-length: calc(100vw / 7); /* branch extends to 1/7 of the viewport */
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	position: relative; /* for absolutely positioned branch elements */
+	--vertical-height: 5000px; /* total vertical line height (adjustable) — extended downward */
+	--h-length: calc(100vw * 6 / 7); /* horizontal line length (6/7 of viewport) */
+}
+.center-vertical-line {
+	position: relative;
+	width: 2px; /* very thin */
+	max-width: 2px;
+	background: var(--overlay-gray); /* grey vertical line */
+	height: var(--vertical-height); /* very long; controlled via variable */
+	margin: 40px 0;
+}
+
+/* horizontal line removed per request (was .center-horizontal) */
+
+/* Branch lines that extend left from the center line */
+.branch {
+	position: absolute;
+	left: calc(50% - var(--branch-length)); /* left-anchored branch (extends to center) */
+	width: var(--branch-length);
+	height: 2px;
+	background: var(--overlay-gray);
+	pointer-events: none;
+}
+.branch.right {
+	left: 50%; /* start at center and extend to the right */
+	width: var(--branch-length);
+}
+
+/* Rectangle placed flush left of the first branch */
+.branch-rect {
+	position: absolute;
+	border: 2px solid var(--overlay-gray);
+	background: var(--header-bg);
+	box-sizing: border-box;
+	pointer-events: none;
+	border-radius: 12px;
+	box-shadow: 0 12px 30px rgba(0,0,0,0.14);
+}
+
+/* Inner content of the rectangles */
+.branch-rect .rect-inner {
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	overflow: hidden;
+}
+.branch-rect .rect-title {
+	font-family: var(--font-heading);
+	color: var(--text-primary);
+	text-align: center;
+	margin: 0 0 12px 0;
+	font-size: 24px;
+	line-height: 1.2;
+	font-style: bold;
+}
+.branch-rect .rect-body {
+	font-family: var(--font-body);
+	color: var(--text-primary);
+	text-align: left;
+	margin: 0 0 12px 0;
+	overflow: auto;
+	flex: 0 0 auto;
+}
+.branch-rect .rect-image {
+	display: block;
+	margin: 12px auto 0 auto;
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+	flex: 0 0 auto;
+	border-radius: 8px; /* rounded image corners */
+}
+
+@media (max-width: 900px) {
+	.center-vertical-line { height: 3000px; }
+	.vertical-line-container { --branch-length: calc(100vw / 7); }
 }

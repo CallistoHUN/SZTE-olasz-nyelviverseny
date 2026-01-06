@@ -28,6 +28,12 @@
       "body": "Il libro conta una storia inventata. I protagonisti sono Giacomo e Simona, un ragazzo e una ragazza. In Via dei Tulipani succede un omicidio: Sabato mattina trova la signorina Valle il corpo di signor Cassi – un uomo strano, piccolo e magro, chi ascolta sempre la musica ad alto volume. La polizia sospetta degli amici del signor Cassi, ma secondo Giacomo e Simona ha ucciso Cassi uno dei loro vicini. Donque cominciano a investigare. Il piano di Giacomo è efficace: Loro chiederanno tutti i vicini dello zucchero. E quasi possono collezionare informazioni. Trovano due persone suspetti: signora Bianchi e signor Moreno. Giacomo decide, che scende la notta in giardino e sta li tutto il tempo necessario. Guarda che entra ed esce. E con sorpresa vede, che si la signora Bianchi e il signor Moreno abbracciano. Sono amanti!<br>La notte, l’una Giacomo scopre il signor Morena con una borsa sportiva. Lui segue il uomo al garage. E nella borsa scopre l'arma del delitto: una statuetta! Giacomo probe correre veloce via, ma solo un secondo, e il ragazzo cade a terra svenuto.<br>Com’ è passata dopo? Attenzione: C’è ancora un colpo di scena nella storia! Leggi il riassunto completo <a href=\"tortenet.html\">qui</a>!"
     }
   },
+  "story": {
+    "venerdi": {
+      "title": "Venerdí sera",
+      "body": "Qui andrà il testo in italiano per la sezione 'Venerdí sera'."
+    }
+  },
   "footer": {
     "copyright": "© 2025 Novográdecz Damján"
   }
@@ -45,6 +51,16 @@
     },
     "personaggi": {
       "title": "Personaggi",
+    ,
+    "rects": {
+      "rect1": { "title": "Titolo 1", "body": "Qui il testo in italiano per il riquadro 1." },
+      "rect2": { "title": "Titolo 2", "body": "Qui il testo in italiano per il riquadro 2." },
+      "rect3": { "title": "Titolo 3", "body": "Qui il testo in italiano per il riquadro 3." },
+      "rect4": { "title": "Titolo 4", "body": "Qui il testo in italiano per il riquadro 4." },
+      "rect5": { "title": "Titolo 5", "body": "Qui il testo in italiano per il riquadro 5." },
+      "rect6": { "title": "Titolo 6", "body": "Qui il testo in italiano per il riquadro 6." },
+      "rect7": { "title": "Titolo 7", "body": "Qui il testo in italiano per il riquadro 7." }
+    }
       "body": "Sul sito si trova un’analisi dei personaggi. Che aspetto ha – figure, capelli, occhi… Com'è la personalità – timido, accorto, bravo... E poi puoi vedere i contatti con altri personaggi – amanti, amici, nemici..."
     },
     "quiz": {

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Történet — Mistero in Via dei Tulipani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Történet oldal — Mistero in Via dei Tulipani.">
+    <script src="i18n.js" defer></script>
+    <script>
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+        window.addEventListener('DOMContentLoaded', () => window.scrollTo(0, 0));
+        window.addEventListener('load', () => window.scrollTo(0, 0));
+    </script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-logo" id="headerLogo">
+            <img src="logo.png" alt="Weboldal logó" data-i18n-attr="alt:img.logo_alt" style="width: 600px; height: auto;">
+        </div>
+        <div class="header-menu" id="headerMenu">
+            <a href="index.html" class="menu-link" data-i18n="nav.home">Kezdőlap</a>
+            <a href="tortenet.html" class="menu-link" data-i18n="nav.story">Történet</a>
+            <a href="szereplok.html" class="menu-link" data-i18n="nav.characters">Szereplők</a>
+            <a href="quiz.html" class="menu-link" data-i18n="nav.quiz">Quiz</a>
+            <a href="rolam.html" class="menu-link" data-i18n="nav.about">Rólam</a>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" class="lang-btn" data-set-lang="hu" data-i18n="lang.hu" aria-pressed="true">HU</button>
+                <button type="button" class="lang-btn" data-set-lang="it" data-i18n="lang.it" aria-pressed="false">IT</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="header-spacer" aria-hidden="true"></div>
+
+    <main class="page-main" role="main">
+        <div class="vertical-line-container" aria-hidden="true">
+            <div class="center-vertical-line"></div>
+        </div>
+    </main>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Restore header collapse-on-scroll behavior and set header offset
+        const header = document.querySelector('.main-header');
+        function setHeaderOffset() {
+            if (!header) return;
+            const h = Math.ceil(header.getBoundingClientRect().height);
+            document.body.style.setProperty('--header-offset', `${h}px`);
+        }
+        function updateScrolledState() {
+            if (!header) return;
+            const isScrolled = window.scrollY > 10;
+            header.classList.toggle('scrolled', isScrolled);
+            setHeaderOffset();
+        }
+        let tickingHeader = false;
+        function onScrollHeader() {
+            if (tickingHeader) return;
+            tickingHeader = true;
+            window.requestAnimationFrame(() => {
+                updateScrolledState();
+                tickingHeader = false;
+            });
+        }
+        window.addEventListener('scroll', onScrollHeader, { passive: true });
+        window.addEventListener('resize', setHeaderOffset);
+        updateScrolledState();
+
+        const container = document.querySelector('.vertical-line-container');
+        const line = document.querySelector('.center-vertical-line');
+        if (!container || !line) return;
+
+        const branchCount = 7; // exact number of branches requested
+        const interval = 700; // px between branches
+        const startOffset = 200; // px from top of the vertical line to first branch
+
+        // create exactly `branchCount` branches, first one left, every second to the right
+        for (let i = 0; i < branchCount; i++) {
+            const top = startOffset + i * interval;
+            const b = document.createElement('div');
+            b.className = 'branch';
+            if (i % 2 === 1) b.classList.add('right'); // odd indices -> right
+            b.style.top = top + 'px';
+            container.appendChild(b);
+        }
+
+        // ensure final directions explicitly (first left, alternating)
+        const branches = container.querySelectorAll('.branch');
+        if (branches.length >= 1) branches[0].classList.remove('right');
+        for (let i = 0; i < branches.length; i++) {
+            if (i % 2 === 1) branches[i].classList.add('right');
+            else branches[i].classList.remove('right');
+        }
+
+        // Insert structured rectangles (title, body, image) aligned to first branch
+        if (branches.length >= 1) {
+            const first = branches[0];
+
+            function makeRectElement(id) {
+                const r = document.createElement('div');
+                r.className = 'branch-rect';
+                r.setAttribute('data-rect-id', String(id));
+                r.innerHTML = `
+                    <div class="rect-inner">
+                        <h3 class="rect-title" data-i18n="rects.rect${id}.title">[title]</h3>
+                        <div class="rect-body" data-i18n="rects.rect${id}.body">[body]</div>
+                        <img class="rect-image" src="konyv.jpeg" alt="" />
+                    </div>
+                `;
+                return r;
+            }
+
+            requestAnimationFrame(() => {
+                const br = first.getBoundingClientRect();
+                const cont = container.getBoundingClientRect();
+                const rectW = Math.min(520, Math.round(window.innerWidth * 0.24));
+                let rectH = Math.max(Math.round(rectW * 1.35), rectW + 80, 480);
+                rectH += 300;
+                const leftPx = (br.left - cont.left) - rectW;
+                const rectYOffset = 200;
+                const topPx = (br.top - cont.top) + rectYOffset - Math.round(rectH / 2);
+
+                // create primary rect (id 1)
+                const r1 = makeRectElement(1);
+                r1.style.left = leftPx + 'px';
+                r1.style.top = topPx + 'px';
+                r1.style.width = rectW + 'px';
+                r1.style.height = rectH + 'px';
+                container.appendChild(r1);
+                // replace the default image in the first rectangle with an existing file
+                const img1 = r1.querySelector('.rect-image');
+                if (img1) img1.src = 'tortkep1.png';
+
+                // duplicate rectangle positioned 1400px below the first (id 2)
+                const r2 = makeRectElement(2);
+                const secondTopPx = topPx + 1400;
+                r2.style.left = r1.style.left;
+                r2.style.top = secondTopPx + 'px';
+                r2.style.width = r1.style.width;
+                r2.style.height = r1.style.height;
+                container.appendChild(r2);
+
+                // mirrored copy on the right side (id 3) and further mirrored duplicates (4,5)
+                const rectLeftNum = leftPx;
+                const rectWidthNum = rectW;
+                const contWidthNum = cont.width;
+                const rectCenter = rectLeftNum + rectWidthNum / 2;
+                const center = contWidthNum / 2;
+                const mirroredCenter = 2 * center - rectCenter;
+                const mirroredLeft = mirroredCenter - rectWidthNum / 2;
+
+                const r3 = makeRectElement(3);
+                r3.style.left = mirroredLeft + 'px';
+                r3.style.top = (topPx + 700) + 'px';
+                r3.style.width = r1.style.width;
+                r3.style.height = r1.style.height;
+                container.appendChild(r3);
+
+                const r4 = makeRectElement(4);
+                r4.style.left = r3.style.left;
+                r4.style.top = (parseFloat(r3.style.top) + 1400) + 'px';
+                r4.style.width = r3.style.width;
+                r4.style.height = r3.style.height;
+                container.appendChild(r4);
+
+                const r5 = makeRectElement(5);
+                r5.style.left = r3.style.left;
+                r5.style.top = (parseFloat(r3.style.top) + (2 * 1400)) + 'px';
+                r5.style.width = r3.style.width;
+                r5.style.height = r3.style.height;
+                container.appendChild(r5);
+
+                // Two further duplicates of r2 at +1400 and +2800 (ids 6 and 7)
+                const r6 = makeRectElement(6);
+                r6.style.left = r2.style.left;
+                r6.style.top = (secondTopPx + 1400) + 'px';
+                r6.style.width = r2.style.width;
+                r6.style.height = r2.style.height;
+                container.appendChild(r6);
+
+                const r7 = makeRectElement(7);
+                r7.style.left = r2.style.left;
+                r7.style.top = (secondTopPx + (2 * 1400)) + 'px';
+                r7.style.width = r2.style.width;
+                r7.style.height = r2.style.height;
+                container.appendChild(r7);
+            });
+        }
+    });
+    </script>
+
+</body>
+</html>
+
+<!-- Fixed page cover inserted as topmost layer -->
+<div class="page-cover" aria-hidden="true"></div>

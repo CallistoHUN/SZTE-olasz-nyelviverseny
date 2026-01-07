@@ -18,8 +18,25 @@
         window.addEventListener('DOMContentLoaded', () => window.scrollTo(0, 0));
         window.addEventListener('load', () => window.scrollTo(0, 0));
     </script>
+    <style>
+        /* Mobile-only full-screen overlay message */
+        .mobile-overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);color:#fff;z-index:9999;padding:20px;text-align:center;font-family:'Cormorant',serif;visibility:hidden;opacity:0;transition:opacity .2s ease,visibility .2s}
+        .mobile-overlay.visible{visibility:visible;opacity:1}
+        .mobile-overlay .message{background:rgba(0,0,0,0.6);padding:18px 24px;border-radius:12px;max-width:420px;width:90%;font-size:22px;line-height:1.3}
+        @media (min-width:420px){.mobile-overlay .message{font-size:24px}}
+        @media (min-width:800px){.mobile-overlay{display:none}}
+    </style>
+    <style>
+        /* Fixed full-width bottom takaro image */
+        .footer-takaro{position:fixed;left:0;right:0;bottom:0;width:100%;z-index:9990;pointer-events:none}
+        .footer-takaro img{display:block;width:100%;height:auto;max-height:220px;object-fit:cover}
+        @media (max-width:420px){.footer-takaro img{max-height:140px}}
+    </style>
 </head>
 <body>
+    <div id="mobileOverlay" class="mobile-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="message">Az oldal sajnos csak számítógépes nézetben elérhető :(</div>
+    </div>
     <header class="main-header">
         <div class="header-logo" id="headerLogo">
             <img src="logo.png" alt="Weboldal logó" data-i18n-attr="alt:img.logo_alt" style="width: 600px; height: auto;">
@@ -199,5 +216,8 @@
 </body>
 </html>
 
-<!-- Fixed page cover inserted as topmost layer -->
-<div class="page-cover" aria-hidden="true"></div>
+    <!-- Fixed bottom full-width takaro image -->
+    <div class="footer-takaro" aria-hidden="true">
+        <img src="takaro.png" alt="">
+    </div>
+

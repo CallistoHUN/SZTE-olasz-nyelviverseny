@@ -11,7 +11,6 @@
     "home": "Kezdőlap",
     "story": "Történet",
     "characters": "Szereplők",
-    "quiz": "Quiz",
     "about": "Rólam"
   },
   "img": {
@@ -62,10 +61,6 @@
       "rect7": { "title": "Cím 7", "body": "Itt a magyar szöveg a 7. téglalaphoz." }
     }
       "body": "Az oldalon a szereplők elemzése található. Hogy néz ki – alakja, haja, szeme... Milyen a személyisége – félénk, eszes, ügyes... Ezenkívül láthatod a kapcsolatait més személyekkel – szeretők, barátok, ellenségek..."
-    },
-    "quiz": {
-      "title": "Quiz",
-      "body": "Ha már elolvastad a könyvet vagy ezt a Mistero in Via dei Tulipani oldalt, akkor megtudsz csinálni egy kvízt, hogy teszteld a tudásodat, mennyire figyelmesen olvastad el a könyvet. Sok különböző feladatot csináltam."
     },
     "chisono": {
       "title": "Rólam",

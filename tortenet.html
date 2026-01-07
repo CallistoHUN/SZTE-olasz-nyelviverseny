@@ -45,7 +45,6 @@
             <a href="index.html" class="menu-link" data-i18n="nav.home">Kezdőlap</a>
             <a href="tortenet.html" class="menu-link" data-i18n="nav.story">Történet</a>
             <a href="szereplok.html" class="menu-link" data-i18n="nav.characters">Szereplők</a>
-            <a href="quiz.html" class="menu-link" data-i18n="nav.quiz">Quiz</a>
             <a href="rolam.html" class="menu-link" data-i18n="nav.about">Rólam</a>
             <div class="lang-switch" role="group" aria-label="Language">
                 <button type="button" class="lang-btn" data-set-lang="hu" data-i18n="lang.hu" aria-pressed="true">HU</button>
@@ -163,6 +162,9 @@
                 r2.style.width = r1.style.width;
                 r2.style.height = r1.style.height;
                 container.appendChild(r2);
+                // replace the image in rectangle id 2 with tortkep3.png
+                const img2 = r2.querySelector('.rect-image');
+                if (img2) img2.src = 'tortkep3.png';
 
                 // mirrored copy on the right side (id 3) and further mirrored duplicates (4,5)
                 const rectLeftNum = leftPx;
@@ -179,6 +181,9 @@
                 r3.style.width = r1.style.width;
                 r3.style.height = r1.style.height;
                 container.appendChild(r3);
+                // replace the image in rectangle id 3 with tortkep2.png
+                const img3 = r3.querySelector('.rect-image');
+                if (img3) img3.src = 'tortkep2.png';
 
                 const r4 = makeRectElement(4);
                 r4.style.left = r3.style.left;

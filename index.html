@@ -28,10 +28,9 @@
             const panelInner = infoTabs.querySelector('.panel-inner');
             const cards = Array.from(infoTabs.querySelectorAll('.info-card'));
 
-            const descriptions = {
+                const descriptions = {
                 storia: '<strong>Storia</strong>: Riassunto della trama e i punti salienti della storia.',
                 personaggi: '<strong>Personaggi</strong>: Breve descrizione dei protagonisti e dei loro ruoli.',
-                quiz: '<strong>Quiz</strong>: Domande per mettere alla prova la tua comprensione del testo.',
                 chisono: '<strong>Chi sono</strong>: Informazioni sull\'autore e il contesto del lavoro.'
             };
 
@@ -156,7 +155,6 @@
             <a href="index.html" class="menu-link" data-i18n="nav.home">Kezdőlap</a>
             <a href="tortenet.html" class="menu-link" data-i18n="nav.story">Történet</a>
             <a href="szereplok.html" class="menu-link" data-i18n="nav.characters">Szereplők</a>
-            <a href="quiz.html" class="menu-link" data-i18n="nav.quiz">Quiz</a>
             <a href="rolam.html" class="menu-link" data-i18n="nav.about">Rólam</a>
             <div class="lang-switch" role="group" aria-label="Language">
                 <button type="button" class="lang-btn" data-set-lang="hu" data-i18n="lang.hu" aria-pressed="true">HU</button>
@@ -197,7 +195,6 @@
                 <div class="tab-row tab-top" role="presentation">
                     <button class="tab-btn" role="tab" data-key="storia" aria-selected="true"><span class="tab-label" data-i18n="tabs.storia.title">Storia</span></button>
                     <button class="tab-btn" role="tab" data-key="personaggi" aria-selected="false"><span class="tab-label" data-i18n="tabs.personaggi.title">Personaggi</span></button>
-                    <button class="tab-btn" role="tab" data-key="quiz" aria-selected="false"><span class="tab-label" data-i18n="tabs.quiz.title">Quiz</span></button>
                     <button class="tab-btn" role="tab" data-key="chisono" aria-selected="false"><span class="tab-label" data-i18n="tabs.chisono.title">Chi sono</span></button>
                 </div>
 
@@ -210,7 +207,6 @@
                     <div class="tab-contents">
                         <div class="tab-content" data-key="storia" data-i18n-html="tabs.storia.body"></div>
                         <div class="tab-content" data-key="personaggi" data-i18n-html="tabs.personaggi.body" hidden></div>
-                        <div class="tab-content" data-key="quiz" data-i18n-html="tabs.quiz.body" hidden></div>
                         <div class="tab-content" data-key="chisono" data-i18n-html="tabs.chisono.body" hidden></div>
                     </div>
                 </div>

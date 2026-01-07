@@ -11,7 +11,6 @@
     "home": "Home",
     "story": "Storia",
     "characters": "Personaggi",
-    "quiz": "Quiz",
     "about": "Chi sono"
   },
   "img": {
@@ -62,10 +61,6 @@
       "rect7": { "title": "Titolo 7", "body": "Qui il testo in italiano per il riquadro 7." }
     }
       "body": "Sul sito si trova un’analisi dei personaggi. Che aspetto ha – figure, capelli, occhi… Com'è la personalità – timido, accorto, bravo... E poi puoi vedere i contatti con altri personaggi – amanti, amici, nemici..."
-    },
-    "quiz": {
-      "title": "Quiz",
-      "body": "Se hai ancora letto il libro o questo Mistero in Via dei Tulipani sito, puoi fare un quiz, per testare la tua conoscenza, quanto attentamente hai letto il testo. Ho fatto molto compiti diversi."
     },
     "chisono": {
       "title": "Chi sono",

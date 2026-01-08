@@ -80,6 +80,10 @@
 		});
 	};
 
+	// expose a refresh API later by storing last-loaded dictionaries
+	let __lastDict = null;
+	let __lastFallback = null;
+
 	const updateLangUi = (lang) => {
 		if (!lang) return;
 		document.documentElement.lang = lang;
@@ -112,6 +116,16 @@
 				}
 			}
 			applyTranslations(dict || {}, fallbackDict || {});
+			__lastDict = dict || {};
+			__lastFallback = fallbackDict || {};
+			// expose a safe global API to reapply translations for dynamic content
+			try {
+				window.i18n = window.i18n || {};
+				window.i18n.refresh = () => applyTranslations(__lastDict || {}, __lastFallback || {});
+				window.i18n.setLang = (l) => setLang(l);
+			} catch (e) {
+				// ignore if environment disallows global assignment
+			}
 			console.debug('[i18n] translations applied for', lang);
 		} catch (err) {
 			console.error('[i18n] failed to load', lang, err);

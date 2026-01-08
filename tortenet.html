@@ -191,6 +191,8 @@
                 r4.style.width = r3.style.width;
                 r4.style.height = r3.style.height;
                 container.appendChild(r4);
+                const img4 = r4.querySelector('.rect-image');
+                if (img4) img4.src = 'tortkep4.png';
 
                 const r5 = makeRectElement(5);
                 r5.style.left = r3.style.left;
@@ -213,6 +215,10 @@
                 r7.style.width = r2.style.width;
                 r7.style.height = r2.style.height;
                 container.appendChild(r7);
+                // Ensure translations are applied to dynamically added rectangles
+                if (window.i18n && typeof window.i18n.refresh === 'function') {
+                    window.i18n.refresh();
+                }
             });
         }
     });

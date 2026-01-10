@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <meta name="description" content="Történet oldal — Mistero in Via dei Tulipani.">
+    <script>console.log("tortenet.html JS betöltve");</script>
     <script src="i18n.js" defer></script>
     <script>
         if ('scrollRestoration' in history) {
@@ -208,6 +209,8 @@
                 r6.style.width = r2.style.width;
                 r6.style.height = r2.style.height;
                 container.appendChild(r6);
+				const img6 = r6.querySelector('.rect-image');
+				if (img6) img6.src = 'tortkep5.png';
 
                 const r7 = makeRectElement(7);
                 r7.style.left = r2.style.left;

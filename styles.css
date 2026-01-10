@@ -96,6 +96,8 @@
 	box-shadow: none;
 }
 
+:root {
+
 * { box-sizing: border-box; }
 
 html {

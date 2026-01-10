@@ -20,7 +20,7 @@
   "section": {
     "ajanlo": {
       "title": "Könyvajánló",
-      "body": "Ez a könyv egy krimi. Szereted a krimiket? Ajánlom neked ezt a könyvet, ha szeretsz olvasni idegen nyelven. Tökéletes a gyakorlásra és új szavak tanulására. Ha nem tanulod a nyelvet régóta, ne aggódj, mert ezt a könyvet azoknak írták, akik csak egy-két éve kezdték az olaszt. Sok spoiler található ezen az oldalon, így ha szeretnéd elolvasni a könyvet, <a href=\"tortenet.html\">kattints ide</a>!"
+      "body": "Ez a könyv egy krimi. Szereted a krimiket? Ajánlom neked ezt a könyvet, ha szeretsz olvasni idegen nyelven. Tökéletes a gyakorlásra és új szavak tanulására. Ha nem tanulod a nyelvet régóta, ne aggódj, mert ezt a könyvet azoknak írták, akik csak egy-két éve kezdték az olaszt. Sok spoiler található ezen az oldalon, így ha szeretnéd elolvasni a könyvet, <a href=\"Mistero%20in%20Via%20dei%20Tulipani.pdf\" download>Töltsd le a könyvet (PDF)</a>!"
     },
     "story": {
       "title": "Történet",
@@ -124,5 +124,20 @@
         "relations_body": "A Tulipánok utcai lakóházban él, és nehéz kapcsolata van a szomszédokkal.",
         "body": "<strong>Fizikai kinézet</strong><p>Cassi úr alacsony és vékony férfi, az arca mindig szürke. Több mint 50 éves, de idősebbnek tűnik.</p><strong>Tulajdonságok</strong><p>Zajos ember, mert szereti a hangos zenét. Nem figyel a szomszédokra és nem válaszol a levelekre.</p><strong>Kapcsolatok</strong><p>A Tulipánok utcai lakóházban él, és nehéz kapcsolata van a szomszédokkal.</p>"
       }
+    }
+    ,
+    "rolam": {
+      "title": "Rólam",
+      "body": "Novográdecz Damjánnak hívnak, 17 éves vagyok. A Pannonhalmi Bencés Gimnáziumba járok. Szeretek futni és sakkozni. A szabadidőmben szeretek olvasni vagy zenét hallgatni. A kedvenc tantárgyaim a matematika, az informatika és a történelem. De szeretek idegen nyelveket is tanulni, mint németet, angolt, oroszt és természetesen olaszt. Két és fél éve tanulok olaszul és egy nagyon jó és kedves olasztanárom van. Felnőttként szeretnék sok időt tölteni Olaszországban.",
+      "project": {
+        "title": "A projektről",
+        "body": "Egy „vibe-coder” amatőr vagyok. Ez az angol kifejezés a programozás egy új fajtáját jelenti. Nem tudnod sokat a programozásról, de tudsz írni egy bonyolult programot az MI segítségével. Promtokat írsz az MI-nek, majd javítod a hibákat vagy több leírást adsz. A projektet a téli szünet elején kezdtem el és az utolsó pillanatban fejezem be,mert az MI segítségével sem könnyű egy oldalt csinálni. Nagyjából 60% volt a programozás 40% a szövegek megírása. Akartam csinálni egy „Quiz” oldalt is, de nem volt elég időm :( Találtam egy könyvet az interneten, ahol képek és illusztrációk is voltak. A projektet a <b>Microsoft Visual Studióban</b> csináltam. Néhány olasz szóhoz is használtam MI-t fordítónak, de a szöveget én írtam. A munkám végére csatolok néhány képet."
+        },
+        "gallery": {
+          "kep1": "Az asztalom a kollégiumban.",
+          "kep2": "Az asztalom otthon.",
+          "kep3": "Kétablakos móddal gyorsabban dolgoztam.",
+          "kep4": "Microsoft Visual Studio"
+        }
     }
 }

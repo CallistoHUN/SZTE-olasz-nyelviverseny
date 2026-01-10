@@ -20,7 +20,7 @@
   "section": {
     "ajanlo": {
       "title": "Recensione",
-      "body": "Questo libro è un racconto giallo. Ti piace i racconti gialli? Te lo consiglio, se ti piace leggere libri in lingua straniera. È perfetto per esercizio e per studiare parole nuove. Se tu non studi lingua da tempo, non preoccuparti, perché questo libro è scritto per qualcuno, chi hanno italiano solo uno o due anni fa cominciato. Su questa pagina trovi molto spoiler, cosi se vuoi leggere il libro, <a href=\"tortenet.html\">clicca qui</a>!"
+      "body": "Questo libro è un racconto giallo. Ti piace i racconti gialli? Te lo consiglio, se ti piace leggere libri in lingua straniera. È perfetto per esercizio e per studiare parole nuove. Se tu non studi lingua da tempo, non preoccuparti, perché questo libro è scritto per qualcuno, chi hanno italiano solo uno o due anni fa cominciato. Su questa pagina trovi molto spoiler, cosi se vuoi leggere il libro, <a href=\"Mistero%20in%20Via%20dei%20Tulipani.pdf\" download>Scarica il libro (PDF)</a>!"
     },
     "story": {
       "title": "La Storia",
@@ -35,8 +35,7 @@
     "title": "Mistero in Via dei Tulipani",
     "subtitle": "Non tutti i vicini sono innocenti.",
     "cta": "Scopri la storia"
-  }
-  ,
+  },
   "tabs": {
     "storia": {
       "title": "Storia",
@@ -123,6 +122,22 @@
       "relations_title": "Relazioni",
       "relations_body": "Vive nel palazzo di Via dei Tulipani e ha rapporti difficili con i vicini.",
       "body": "<strong>Aspetto fisico</strong><p>Il signor Cassi è un uomo piccolo e magro, con la faccia sempre grigia. Ha più di cinquant'anni, ma sembra più vecchio.</p><strong>Carattere</strong><p>È una persona rumorosa perché ama la musica alta. Non ascolta i vicini e non risponde alle lettere.</p><strong>Relazioni</strong><p>Vive nel palazzo di Via dei Tulipani e ha rapporti difficili con i vicini.</p>"
+    }
+  }
+  ,
+  "rolam": {
+    "title": "Chi sono?",
+    "body": "Mi chiamo Damján Novográdecz, ho 17 anni. Frequento il Liceo Benedittino di Pannonhalma. Mi piace correre e giocare a scacchi. Nel tempo libero mi piace leggere o ascoltare la musica. I miei soggetti preferiti sono matematica, informatica e storia. Ma mi piace anche studiare lingue straniere, come tedesco, inglese, russo e naturalmente italiano. Studio l'italiano da due anni e mezzo e ho una professoressa molto buona e carina. Da adulto vorrei passare molto tempo nel Belpaese."
+    ,
+    "project": {
+      "title": "Sul progetto",
+      "body": "Sono un „vibe-coder” amateur. Questa espressione inglese si riferisce a un nuovo modo di programmare: Tu non puoi conoscere molto della programmazione, ma puoi scrivere un programma complicato con l’aiuto di IA. Scrivi promt per l’IA, poi correggi gli errori o dai piú descrizioni. Ho iniziato il progetto all’inizio delle vacanze invernali e finito all’ultimo momento, perché anche con l’aiuto di IA non è facile fare una pagina. Era circa 60% programmazione e 40% scrittura dei testi. Volevo fare anche una pagina „Quiz”, ma non avevo abbastanza tempo :(  Ho trovato un libro sul internet, dove erano anche immagini e illustrazioni. Il progetto è fatto in <b>Microsoft Visual Studio</b>. Per alcune parole italiane ho usato l’IA come traduttore, ma il testo l’ho scritto io. Alla fine del mio lavoro allego alcune immagini."
+    },
+    "gallery": {
+      "kep1": "La mia scrivania in collegio.",
+      "kep2": "La mia scrivania a casa.",
+      "kep3": "Lavoravo più velocemente con due finestre aperte.",
+      "kep4": "Microsoft Visual Studio"
     }
   }
 }

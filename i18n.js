@@ -117,47 +117,73 @@
 		}
 		updateLangUi(lang);
 
-		const base = getI18nBasePath();
-		try {
-			const dictUrl = `${base}${lang}.json`;
-			const dict = await fetchJson(dictUrl);
-			console.debug('[i18n] fetched', dictUrl);
-			let fallbackDict = null;
-			if (lang !== DEFAULT_LANG) {
-				try {
-					const fallbackUrl = `${base}${DEFAULT_LANG}.json`;
-					fallbackDict = await fetchJson(fallbackUrl);
-					console.debug('[i18n] fetched fallback', fallbackUrl);
-				} catch (e) {
-					console.warn('[i18n] could not load fallback language', e);
-				}
-			}
-			applyTranslations(dict || {}, fallbackDict || {});
-			__lastDict = dict || {};
-			__lastFallback = fallbackDict || {};
-			// expose a safe global API to reapply translations for dynamic content
+		// Try multiple base paths when loading language files to be resilient on GitHub Pages
+		const bases = [getI18nBasePath(), './', '/i18n/'];
+		let dict = null;
+		let dictBase = null;
+		let firstErr = null;
+		for (const b of bases) {
+			const dictUrl = `${b}${lang}.json`;
 			try {
-				window.i18n = window.i18n || {};
-				window.i18n.refresh = () => applyTranslations(__lastDict || {}, __lastFallback || {});
-				window.i18n.setLang = (l) => setLang(l);
+				dict = await fetchJson(dictUrl);
+				dictBase = b;
+				console.debug('[i18n] fetched', dictUrl);
+				break;
 			} catch (e) {
-				// ignore if environment disallows global assignment
-			}
-			console.debug('[i18n] translations applied for', lang);
-		} catch (err) {
-			console.error('[i18n] failed to load', lang, err);
-			// Try to at least apply default language if available
-			if (lang !== DEFAULT_LANG) {
-				try {
-					const basePath = getI18nBasePath();
-					const defUrl = `${basePath}${DEFAULT_LANG}.json`;
-					const base = await fetchJson(defUrl);
-					applyTranslations(base || {}, {});
-				} catch (e) {
-					console.warn('[i18n] could not load default translations', e);
-				}
+				if (!firstErr) firstErr = e;
+				console.warn('[i18n] fetch failed', dictUrl, e);
 			}
 		}
+
+		if (!dict) {
+			console.error('[i18n] failed to load any language file for', lang, firstErr);
+			// Attempt to fallback to DEFAULT_LANG using same bases
+			if (lang !== DEFAULT_LANG) {
+				let fallbackLoaded = false;
+				for (const b of bases) {
+					const defUrl = `${b}${DEFAULT_LANG}.json`;
+					try {
+						const baseDict = await fetchJson(defUrl);
+						applyTranslations(baseDict || {}, {});
+						fallbackLoaded = true;
+						console.debug('[i18n] applied default translations from', defUrl);
+						break;
+					} catch (e) {
+						console.warn('[i18n] fallback fetch failed', defUrl, e);
+					}
+				}
+				if (!fallbackLoaded) console.warn('[i18n] could not load any default translations');
+			}
+			return;
+		}
+
+		let fallbackDict = null;
+		if (lang !== DEFAULT_LANG) {
+			for (const b of bases) {
+				const fallbackUrl = `${b}${DEFAULT_LANG}.json`;
+				try {
+					fallbackDict = await fetchJson(fallbackUrl);
+					console.debug('[i18n] fetched fallback', fallbackUrl);
+					break;
+				} catch (e) {
+					console.warn('[i18n] fetch failed fallback', fallbackUrl, e);
+				}
+			}
+			if (!fallbackDict) console.warn('[i18n] could not load fallback language');
+		}
+
+		applyTranslations(dict || {}, fallbackDict || {});
+		__lastDict = dict || {};
+		__lastFallback = fallbackDict || {};
+		// expose a safe global API to reapply translations for dynamic content
+		try {
+			window.i18n = window.i18n || {};
+			window.i18n.refresh = () => applyTranslations(__lastDict || {}, __lastFallback || {});
+			window.i18n.setLang = (l) => setLang(l);
+		} catch (e) {
+			// ignore if environment disallows global assignment
+		}
+		console.debug('[i18n] translations applied for', lang);
 	};
 
 	const init = () => {

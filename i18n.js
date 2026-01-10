@@ -22,6 +22,19 @@
 		return path.split('.').reduce((acc, part) => (acc && Object.prototype.hasOwnProperty.call(acc, part) ? acc[part] : undefined), obj);
 	};
 
+	// Determine absolute base path for the `i18n` folder so fetch() uses
+	// root-relative URLs (works for user pages and project pages on GH Pages).
+	const getI18nBasePath = () => {
+		const p = window.location.pathname || '/';
+		const segments = p.split('/').filter(Boolean);
+		// If there are no path segments -> site root
+		if (segments.length === 0) return '/i18n/';
+		// If first segment looks like a filename (contains a dot), treat site root
+		if (segments[0].includes('.')) return '/i18n/';
+		// Otherwise first segment is likely the repo name on project pages
+		return `/${segments[0]}/i18n/`;
+	};
+
 	const fetchJson = async (url) => {
 		const res = await fetch(url, { cache: 'no-store' });
 		if (!res.ok) throw new Error(`Failed to load ${url}: HTTP ${res.status}`);
@@ -103,14 +116,17 @@
 		}
 		updateLangUi(lang);
 
+		const base = getI18nBasePath();
 		try {
-			const dict = await fetchJson(`i18n/${lang}.json`);
-			console.debug('[i18n] fetched', `i18n/${lang}.json`);
+			const dictUrl = `${base}${lang}.json`;
+			const dict = await fetchJson(dictUrl);
+			console.debug('[i18n] fetched', dictUrl);
 			let fallbackDict = null;
 			if (lang !== DEFAULT_LANG) {
 				try {
-					fallbackDict = await fetchJson(`i18n/${DEFAULT_LANG}.json`);
-					console.debug('[i18n] fetched fallback', `i18n/${DEFAULT_LANG}.json`);
+					const fallbackUrl = `${base}${DEFAULT_LANG}.json`;
+					fallbackDict = await fetchJson(fallbackUrl);
+					console.debug('[i18n] fetched fallback', fallbackUrl);
 				} catch (e) {
 					console.warn('[i18n] could not load fallback language', e);
 				}
@@ -132,7 +148,9 @@
 			// Try to at least apply default language if available
 			if (lang !== DEFAULT_LANG) {
 				try {
-					const base = await fetchJson(`i18n/${DEFAULT_LANG}.json`);
+					const basePath = getI18nBasePath();
+					const defUrl = `${basePath}${DEFAULT_LANG}.json`;
+					const base = await fetchJson(defUrl);
 					applyTranslations(base || {}, {});
 				} catch (e) {
 					console.warn('[i18n] could not load default translations', e);

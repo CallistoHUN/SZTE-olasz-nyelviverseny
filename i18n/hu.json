@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "title": "SZTE Olasz",
+    "description": "Kreatív pályamunka a 2025-26-os évi SZTE Olasz nyelvi verseny második fordulójára. Feldolgozott olvasmány: Mistero in Via dei Tulipani. Készítette: Novográdecz Damján."
+  },
+  "lang": {
+    "hu": "HU",
+    "it": "IT"
+  },
+  "nav": {
+    "home": "Kezdőlap",
+    "story": "Történet",
+    "characters": "Szereplők",
+    "about": "Rólam"
+  },
+  "img": {
+    "logo_alt": "Weboldal logó",
+    "banner_alt": "Gyanús autó éjszaka banner"
+  },
+  "section": {
+    "ajanlo": {
+      "title": "Könyvajánló",
+      "body": "Ez a könyv egy krimi. Szereted a krimiket? Ajánlom neked ezt a könyvet, ha szeretsz olvasni idegen nyelven. Tökéletes a gyakorlásra és új szavak tanulására. Ha nem tanulod a nyelvet régóta, ne aggódj, mert ezt a könyvet azoknak írták, akik csak egy-két éve kezdték az olaszt. Sok spoiler található ezen az oldalon, így ha szeretnéd elolvasni a könyvet, <a href=\"tortenet.html\">kattints ide</a>!"
+    },
+    "story": {
+      "title": "Történet",
+      "body": "A könyv egy kitalált történetet mesél el. A főszereplők Giacomo és Simona, egy fiú és egy lány. A Tulipán utcában egy gyilkosság történik: Szombat reggel Valle kisasszony találja meg Cassi úr holttesttét – ő egy furcsa, alacsony és sovány férfia, aki mindig nagyon hangosan hallgat zenét. A rendőrség Cassi úr barátait gyanúsítja, de Giacomo és Simona szerint Cassit a szomszédaik egyike ölhette meg. Ezért nyomozásba kezdenek. Giacomo terve hatékony: Az összes szomszéduktól cukrot kérnek. És így tudnak információkat gyűjteni. Kettő gyanús személyt találnak: Bianchi asszonyt és Moreno urat. Giacomo úgy dönt, éjszakára lemegy a kertbe és kellő ideig ott marad. Nézi ki jön be-ki. És meglepetéssel látja, hogy Bianchi asszony és Moreno úr megölelik egymást. Hiszen ők szeretők!<br>Éjjel egykor Giacomo észreveszi Morena urat egy sporttáskával. A férfit a garázsba követi. És a táskában megtalálja a gyilkos fegyvert: egy szobrocskát! Giacomo megpróbál gyorsan elfutni, de egy csak egy pillanat, és a fiú eszméletlenül a földre zuhan.<br>Mi történt azután? Figyelem: Még van csavar a történetben! Olvasd el a teljes összefoglalót <a href=\"tortenet.html\">itt</a>!"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Novográdecz Damján"
+  }
+  ,
+  "banner": {
+    "title": "Mistero in Via dei Tulipani",
+    "subtitle": "Nem minden szomszéd ártatlan.",
+    "cta": "Fedezd fel a történetet"
+  }
+  ,
+  "tabs": {
+    "storia": {
+      "title": "Történet",
+      "body": "Ezen az oldalon a történet egy részletes összefoglalóját találod. Csináltam egy timeline-t is és beraktam képeket is, hogy jobban lehessen követni a történetet."
+    },
+    "personaggi": {
+      "title": "Szereplők",
+      "body": "Az oldalon a szereplők elemzése található. Hogy néz ki – alakja, haja, szeme... Milyen a személyisége – félénk, eszes, ügyes... Ezenkívül láthatod a kapcsolatait més személyekkel – szeretők, barátok, ellenségek..."
+    },
+    "chisono": {
+      "title": "Rólam",
+      "body": "Egy extra oldal, ahol információkat találsz a projektről, rólam, és a munka forrásairól."
+    }
+  }
+  ,
+  "story": {
+    "venerdi": {
+      "title": "Venerdí sera",
+      "body": "Itt kerül majd a magyar szöveg a 'Venerdí sera' részhez."
+    }
+  }
+  ,
+  "rects": {
+    "rect1": { "title": "Péntek este", "body": "Giacomo tizenhat éves. Péntek este focizott, majd hazament és találkozott egy lánnyal, Simonával. Simona magas és karcsú. Megtudjuk, hogy Giacomo szerelmes Simonába, de félénk is. Az épületben hallották, hogy Cassi úr megint hangosan halllgat zenét. A harmadik emeleten, ahol laknak, Giacomo elköszönt Simonától, majd belépett a lakásba. Giacomo anyukája egy jó vacsorával várta őt. Miközben Giacomo evett, az apja megkérdezte, hová tette a biciklijét. Mivel Giacomo a biciklit az ajtó közelében hagyta, lement a biciklit a megfelelő helyre tenni. Amikor lent volt, egy különös zajt hallott: Valaki kinyitott és becsukott egy ajtót. A második emeleten látta, hogy Cassi úr lakásának ajtaja nyitva volt." },
+    "rect2": { "title": "Szombat dél", "body": "Giacomo felzaklatva ért haza. A lakásban az anyukája Valle asszonnyal beszélgetett, aki mindig tudott mindenkiről mindent. Ő találta meg kora reggel Cassi urat. Miközben elmesélte a törénetet, két férfi jelent meg. Újságírók voltak. Csináltak egy interjút Valle asszonnyal. Valle asszony lelkesen mondta el a történetet, hogy találta meg a testet: Reggel korán kelt – mint mindig -, és elhaladt a nyitott ajtó mellett, hangosan hívta Cassi urat, de ő nem válaszolt, ezért belépett. De Giacomo már nem figyelt, mert megérkezett Simona. Egy rövid beszélgetés után kiderült, hogy Giacomo és Simona egy dologban biztosak: Szerintük a szomszédaik egyike ölte meg Cassi urat, és nem Cassi barátai! Ígyhát nyomozásba kezdenek. Giacomo kitalált egy tervet, hogy gyűjtsenek információkat." },
+    "rect3": { "title": "Szombat reggel", "body": "Szombat reggel Giacomo álmodott egyet. De az anyukája egy borzasztó dologgal keltette: Tegnap éjjel Cassi úr meghalt, de nem csak meghalt, meggyilkolták! Később megérkezett a rendőrség, egy fiatal és egy idős (rendőr) Giacomo házának ajtaján kopogtattak. A rendőrök kérdéseket fel a gyilkosságról. Megkérdezték, hogy Giacomonak és az anyukájának van-e információja  vagy  gyanús-e nekik valaki. Giacommo igennel válaszolt: Elmesélte az előző esti történetet: A hangos zenét, a biciklit, a becsukódó ajtó hangját, Cassi úr nyitott ajtaját. Giacomo szerint a szomszédaik egyike követte el a gyilkosságot. De a rendőrök úgy döntöttek, hogy Cassi úr barátai nyomát követik." },
+    "rect4": { "title": "Szombat, késő délután", "body": "Giacomo terve az volt, hogy azt mondják a szomszédoknak, tortát csinálnak, de elfogyott a cukor, ezért cukrot kérnek. Az összes szomszéd gyanúsított volt, a családjuk és Valle asszony kivételével, mert ő biztosan nem egy gyilkos. A gyerekek az első emeleten kezdték Martino doktornál és a feleségénél. Csengettek, és cukrot kértek. Az orvos azt mondta, nem volt tegnap otthon, mert a kórházban volt. Ezután Simona és Giacomo Bianchiékhoz mentek. Bianchi asszony nyitotta ki az ajtót, és behívta őket. Kedves volt, de egy kicsit gyanús is. A negyedik emeleten lakott a Moreno és a Villa család. Amikor Simona megnyomta a csengőt, Moreno asszony volt az, aki kinyitotta az ajtót. A gyerekek cukrot kértek, majd beléptek. A lakásban Moreno úr is ott volt. Gyanús volt, mert nagyon kíváncsi volt. Villa asszony nem volt otthon, mert a tengernél volt." },
+    "rect5": { "title": "Szombat éjjel", "body": "Giacomo a kertben maradt. Éjfélkor Valle asszony visszatért a kutyájával. Giacomo már nagyon fáradt volt, amikor egykor megérkezett Moreno úr egy sporttáskával. Giacomo követte őt a garázsba. Moreno úrnak eszébe jutott valami, így visszament a házba. Giacomo a garázsba ment gyorsan és kinyitotta a táskát. A táskában egy nagy és súlyos szobrocska volt – a gyilkos fegyver. Giacomo felvette és elkezdett visszafutni az épületbe. De az ajtó előtt Moreno úr állt. Egy másodperc sem telt el, leütötte Giacomót és a fiú a földre zuhant ájultan. Amikor kinyitotta a szemeit, a garázsban volt. Majd Moreno úr betette őt a kocsiba. De amint elindultak, rendőrautók szirénáit hallotta. Néhány perc múlva a rendőrök kinyitották a csomagtartót." },
+    "rect6": { "title": "Szombat  este", "body": "A gyerekek Giacomo lakásában voltak. Mindenekellőtt nekik Moreno úr, de Bianchi asszony is gyanúsnak tűnt. A többiek nem voltak gyanúsak vagy volt alibijük. Giacomo úgy döntött, hogy ezen éjjel kimegy a kertbe figyelni az embereket akik belépnek és kijönnek. Simonának és Giacomónak volt egy rövid romantikus pillanatuk, legalábbis így érezte Giacomo, de tudta hogy még nem ez a megfelelő pillanat. Lement a kertbe és ott maradt két órát. Fél tízkor megérkezett Simona. Ez a két óra alatt csak egy furcsa dolog történt: Bianchi asszony és Moreno úr együtt voltak ott és ölelkeztek. A gyerekek így tudták, hogy szeretők. De Simona mondta, hogy mennie kell." },
+    "rect7": { "title": "Vasárnap reggel", "body": "Simona mentette meg Giacomót. Felkelt éjjel és látta az ablakából, mi történik. Felhívta a rendőrséget, majd lement. Simonának sikerült lelassítania Moreno urat. Majd megérkezett a rendőrség és a gyerekek elmesélték a teljes történetet egy rendőrnek. Majd mindenki hazament a szüleivel. Másnap elmentek sétálni. Itt volt a megfelelő pillanat: Giacomo végre megcsókolta Simonát. Giacomo és Simona felmentek. Amikor elhaladtak Bianchi asszony ajtajánál, a nő behívta őket a lakásba. A gyerekek elmesélték Bianchi asszonynak a történetet, és Moreno úr letartóztatását. De hirtelen a nő egy pisztolyt fogott a két gyerekre. Kiderült, hogy Bianchi asszony ölte meg Cassi urat. Tudta a kapcsolatát Morenóval és el akarta mondani a férjének. De hirtelen valaki csöngetett. Giacomo nem vesztegette az időt. Előreugrott és a földre dobta a nőt. Küzdeni kezdtek, és végül sikerült kicsavarnia a kezéből a fegyvert. És így mindenre fény derült, mindennek vége van. Giacomo és Simona járni kezdtek." }
+  }
+}

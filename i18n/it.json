@@ -1,0 +1,72 @@
+{
+  "meta": {
+    "title": "Gara italiano",
+    "description": "Elaborato creativo per il secondo turno della gara di lingua italiana SZTE 2025-26. Lettura elaborata: Mistero in Via dei Tulipani. Autore: Novográdecz Damján."
+  },
+  "lang": {
+    "hu": "HU",
+    "it": "IT"
+  },
+  "nav": {
+    "home": "Home",
+    "story": "Storia",
+    "characters": "Personaggi",
+    "about": "Chi sono"
+  },
+  "img": {
+    "logo_alt": "Logo del sito",
+    "banner_alt": "Banner: auto sospetta di notte"
+  },
+  "section": {
+    "ajanlo": {
+      "title": "Recensione",
+      "body": "Questo libro è un racconto giallo. Ti piace i racconti gialli? Te lo consiglio, se ti piace leggere libri in lingua straniera. È perfetto per esercizio e per studiare parole nuove. Se tu non studi lingua da tempo, non preoccuparti, perché questo libro è scritto per qualcuno, chi hanno italiano solo uno o due anni fa cominciato. Su questa pagina trovi molto spoiler, cosi se vuoi leggere il libro, <a href=\"tortenet.html\">clicca qui</a>!"
+    },
+    "story": {
+      "title": "La Storia",
+      "body": "Il libro conta una storia inventata. I protagonisti sono Giacomo e Simona, un ragazzo e una ragazza. In Via dei Tulipani succede un omicidio: Sabato mattina trova la signorina Valle il corpo di signor Cassi – un uomo strano, piccolo e magro, chi ascolta sempre la musica ad alto volume. La polizia sospetta degli amici del signor Cassi, ma secondo Giacomo e Simona ha ucciso Cassi uno dei loro vicini. Donque cominciano a investigare. Il piano di Giacomo è efficace: Loro chiederanno tutti i vicini dello zucchero. E quasi possono collezionare informazioni. Trovano due persone suspetti: signora Bianchi e signor Moreno. Giacomo decide, che scende la notta in giardino e sta li tutto il tempo necessario. Guarda che entra ed esce. E con sorpresa vede, che si la signora Bianchi e il signor Moreno abbracciano. Sono amanti!<br>La notte, l’una Giacomo scopre il signor Morena con una borsa sportiva. Lui segue il uomo al garage. E nella borsa scopre l'arma del delitto: una statuetta! Giacomo probe correre veloce via, ma solo un secondo, e il ragazzo cade a terra svenuto.<br>Com’ è passata dopo? Attenzione: C’è ancora un colpo di scena nella storia! Leggi il riassunto completo <a href=\"tortenet.html\">qui</a>!"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Novográdecz Damján"
+  }
+  ,
+  "banner": {
+    "title": "Mistero in Via dei Tulipani",
+    "subtitle": "Non tutti i vicini sono innocenti.",
+    "cta": "Scopri la storia"
+  }
+  ,
+  "tabs": {
+    "storia": {
+      "title": "Storia",
+      "body": "Sul questo sito trovi un riassunto detaglioso di storia. Ho fatto anche un timeline e messo immagini, per seguire meglio la storia."
+    },
+    "personaggi": {
+      "title": "Personaggi",
+      "body": "Sul sito si trova un’analisi dei personaggi. Che aspetto ha – figure, capelli, occhi… Com'è la personalità – timido, accorto, bravo... E poi puoi vedere i contatti con altri personaggi – amanti, amici, nemici..."
+    },
+    "chisono": {
+      "title": "Chi sono",
+      "body": "Una pagina extra del sito, dove trovi informazioni sul progetto, su di me, e le fonti del lavoro."
+    }
+  }
+  ,
+  "story": {
+    "venerdi": {
+      "title": "Venerdì sera",
+      "body": "Giacomo ha sedici anni. Venerdì sera ha giocato a calcio e dopo è tornato a casa e ha incontrata con una ragazza, Simona. Simona è alta e snella. Noi scopriamo, che Giacomo è innamorato di Simona, ma è anche timido. Nel palazzo hanno ascolto, che signor Cassi ha asccolto musica altra di nuovo. Al terzo piano, dove loro abitano, Giacomo ha saluto Simona ed è entrato a casa. La mamma di Giacomo ha aspettato lui con una cena bona. Mentre Giacomo ha mangiato, ha chiamato lui il suo papa, dove ha messo la sua bicicletta. Perché Giacomo ha lasciato la bicicletta vicino al portone, è andato giú per mettere la bicicletta al posto corretto. Quando è stato giú, ha ascolto un rumore strano: qualcuno ha aprito e chiesto una porta. Al secondo piano ha visto, che la porta dell’appertamento del signor Cassi è stata apperta."
+    }
+  }
+  ,
+  "rects": {
+    "rect1": { "title": "Venerdì sera", "body": "Giacomo ha sedici anni. Venerdì sera ha giocato a calcio e dopo è tornato a casa e ha incontrata con una ragazza, Simona. Simona è alta e snella. Noi scopriamo, che Giacomo è innamorato di Simona, ma è anche timido. Nel palazzo hanno ascolto, che signor Cassi ha asccolto musica altra di nuovo. Al terzo piano, dove loro abitano, Giacomo ha saluto Simona ed è entrato a casa. La mamma di Giacomo ha aspettato lui con una cena bona. Mentre Giacomo ha mangiato, ha chiamato lui il suo papa, dove ha messo la sua bicicletta. Perché Giacomo ha lasciato la bicicletta vicino al portone, è andato giú per mettere la bicicletta al posto corretto. Quando è stato giú, ha ascolto un rumore strano: qualcuno ha aprito e chiesto una porta. Al secondo piano ha visto, che la porta dell’appertamento del signor Cassi è stata apperta." },
+    "rect2": { "title": "Sabato mezzogiorno", "body": "Giacomo è tornato a casa arrabbiato. Nell’ appartamento hanno chiacchierato sua mamma con signorina Valle, che ha saputo sempre tutto di tutti. Lei ha trovato il signor Cassi presto di mattina. Mentre ha raccontato la storia, due uomini sono apparsi. Loro sono stati giornalisti. Hanno fatto un’ intervista con la signora Valle. La signorina Valle ha raccontato entusiasta la storia, come ha trovato il corpo: La mattina si è alzata presto – come sempre - , e è passata vicino alla porta aperta, ha chiamato il signor Cassi ad alta voce, ma lui non ha risposto. Allora è entrata e ha trovato il corpodeli signor Cassi. Ma Giacomo non ha ascoltato più perché è arrivata Simona. Dopo una breve conversazione si scopre che Giacomo e Simona sono una cosa sicura: Secondo loro uno dei loro vicini ha ucciso Cassi e non gli amici del signor Cassi! Dunque cominciano a investigare. Giacomo ha inventato un piano per raccogliere informazioni." },
+    "rect3": { "title": "Sabato mattina", "body": "Sabato mattina Giacomo ha fatto un sogno. Ma sua mamma lo ha svegliato con una brutta cosa: Ieri notte il signor Cassi è morto, ma non solo morto, è stato ucciso! A dopo è arrivata la polizia, uno giovane e uno vecchio hanno bussano alla porta di casa di Giacomo. I poliziotti hanno fatto domande sull’omicidio. Hanno chiesto, che Giacomo e sua mamma hanno qualche informazione o qualche sospetto. Giacomo ha risposto „si”: Ha raccontato la storia della sera prima. La musica alta, la bicicletta, il rumore della porta che si chiudeva, la porta del signor Cassi aperta. Secondo Giacomo ha commesso l’omicidio uno dei loro vicini. Ma i polizotti hanno deciso, che loro seguono la pista delle amicizie del signor Cassi piú" },
+    "rect4": { "title": "Sabato, tardo pomeriggio", "body": "Il piano di Giacomo è stato quella, che dicono i vicini, che fanno una torta, ma è finito lo zucchero, quindi chiederano dello zucchero. Tutti i vicini sono stati sospettati, a parte le loro famiglie e la signorina Valle, perché lei sicuro non è un’ assasino. I ragazzi hanno cominciato dal primo piano, dal dottor Martino e la sua moglie. Loro hanno suonato il campanello e chieduto dello zucchero. Il dottore ha detto, che lui è stato non a casa ieri, perché è stato in ospedale. Poi Simona e Giacomo sono andati dai Bianchi. La sinora Bianchi ha apperto la porta e li ha invitato ad entrare. Lei è stata carina, ma anche un po’ sospetta. Al quarto piano hanno abitato la famiglia Moreno e la famiglia Villa. Quando Simona suona il campanello è stata la signora Moreno che ha aprito la porta. I ragazzi hanno chieduto dello zuchero, e poi sono entrati. Nell’appartamento è stato anche il signor Moreno. Lui è stato sospetto, perché è stato molto curioso.  La signora Villa non è stata a casa, perché è stata al mare." },
+    "rect5": { "title": "Sabato notte", "body": "Giacomo è rimasto in giardino. A mezzanotte la signorina Valle è rientrata con il suo cane. Giacomo è stato già molto stanco, quando all’una è arrivato il signor Moreno con una borsa sportiva. Giacomo l’ha seguito nel garage. Il signor Moreno ha dimenticato qualcosa, così è ritornato in casa. Giacomo è andato velocemente nel garage e ha aperto la borsa. Nella borsa c’era una statuetta grossa e pesante – l’arma del delitto. Giacomo l’ha presa e ha cominciato a correre verso il palazzo. Ma davanti al portone c’era lui, il signor Moreno. Senza perdere un secondo, ha colpito Giacomo con un pugno e il ragazzo è caduto a terra svenuto. Quando Giacomo ha riaperto gli occhi, è stato nel garage. Poi il signor Moreno ha messo lui in macchina. Ma appena sono partiti, ha sentito il suono delle sirene delle auto della polizia. Dopo pochi minuti, i poliziotti hanno aperto il portabagagli." },
+    "rect6": { "title": "Sabato sera", "body": "I ragazzi sono stati nell’appartamento di Giacomo. A loro sono sembrati sospetti soprattutto il signor Moreno, ma anche la signora Bianchi. Gli altri non erano sospetti oppure avevano un alibi. Giacomo ha deciso che quella sera scende in giardino e controlla la gente che entra ed esce. Simona e Giacomo hanno avuto un breve momento romantico, almeno così lo ha sentito Giacomo, ma sapeva che non era ancora il momento giusto. È sceso in giardino ed è rimasto lì due ore. Alle nove e mezza è arrivata Simona. Durante quelle due ore è successa solo una cosa strana: la signora Bianchi e il signor Moreno erano lì insieme e si sono abbracciati. I ragazzi hanno capito cosi, che sono amanti. Ma Simona ha detto che dove andare." },
+    "rect7": { "title": "Domenica mattina", "body": "Simona ha salvato Giacomo. Di notte si è alzata e dalla sua finestra ha visto cosa succede. Ha chiamato la polizia e poi è scesata. Simona è riuscita a rallentare il signor Moreno. Poi è arrivata la polizia e i ragazzi hanno raccontato tutta la storia a un poliziotto. Dopo, tutti sono andati a casa dai loro genitori. Il giorno dopo sono andati a spasso. C’era il tempo giusto: Giacomo ha finalmente baciato Simona. Giacomo e Simona sono saliti le scale. Quando sono passati davanti all’appartamento della signora Bianchi, la signora li ha invitati nell’appartamento. I ragazzi hanno raccontato alla signora Bianchi la storia e l’arresto del signor Moreno. Ma subito lei ha puntato una pistola contro i due ragazzi. Si è scoperto che la signora Bianchi aveva ucciso il signor Cassi. Lui sapeva della sua relazione con Moreno e voleva dirlo a suo marito. Ma subito qualcuno ha suonato il campanello. Era la signorina Valle. La signora Bianchi ha girato la testa verso la porta. Giacomo non ha perso un secondo. È scattato in avanti e l’ha gettata a terra. Hanno lottato e lui è riuscito a toglierle la pistola di mano. E così è venuto tutto alla luce, tutto è finito. Giacomo e Simona hanno cominciato a uscire insieme." }
+  }
+}
+ 

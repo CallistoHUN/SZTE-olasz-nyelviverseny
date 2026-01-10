@@ -1196,5 +1196,4 @@ section .content {
 @media (max-width: 900px) {
 	.center-vertical-line { height: 3000px; }
 	.vertical-line-container { --branch-length: calc(100vw / 7); }
-
 }

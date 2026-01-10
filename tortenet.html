@@ -201,6 +201,8 @@
                 r5.style.width = r3.style.width;
                 r5.style.height = r3.style.height;
                 container.appendChild(r5);
+                const img5 = r5.querySelector('.rect-image');
+                if (img5) img5.src = 'tortkep6.png';
 
                 // Two further duplicates of r2 at +1400 and +2800 (ids 6 and 7)
                 const r6 = makeRectElement(6);
@@ -209,8 +211,10 @@
                 r6.style.width = r2.style.width;
                 r6.style.height = r2.style.height;
                 container.appendChild(r6);
-				const img6 = r6.querySelector('.rect-image');
-				if (img6) img6.src = 'tortkep5.png';
+                // replace the image in rectangle id 6 with tortkep6.png
+                const img6 = r6.querySelector('.rect-image');
+                if (img6) img6.src = 'tortkep5.png';
+                
 
                 const r7 = makeRectElement(7);
                 r7.style.left = r2.style.left;
@@ -218,6 +222,9 @@
                 r7.style.width = r2.style.width;
                 r7.style.height = r2.style.height;
                 container.appendChild(r7);
+                // replace the image in rectangle id 7 with tortkep7.png
+                const img7 = r7.querySelector('.rect-image');
+                if (img7) img7.src = 'tortkep7.png';
                 // Ensure translations are applied to dynamically added rectangles
                 if (window.i18n && typeof window.i18n.refresh === 'function') {
                     window.i18n.refresh();

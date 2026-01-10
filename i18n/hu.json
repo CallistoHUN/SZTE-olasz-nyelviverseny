@@ -67,5 +67,62 @@
     "rect5": { "title": "Szombat éjjel", "body": "Giacomo a kertben maradt. Éjfélkor Valle asszony visszatért a kutyájával. Giacomo már nagyon fáradt volt, amikor egykor megérkezett Moreno úr egy sporttáskával. Giacomo követte őt a garázsba. Moreno úrnak eszébe jutott valami, így visszament a házba. Giacomo a garázsba ment gyorsan és kinyitotta a táskát. A táskában egy nagy és súlyos szobrocska volt – a gyilkos fegyver. Giacomo felvette és elkezdett visszafutni az épületbe. De az ajtó előtt Moreno úr állt. Egy másodperc sem telt el, leütötte Giacomót és a fiú a földre zuhant ájultan. Amikor kinyitotta a szemeit, a garázsban volt. Majd Moreno úr betette őt a kocsiba. De amint elindultak, rendőrautók szirénáit hallotta. Néhány perc múlva a rendőrök kinyitották a csomagtartót." },
     "rect6": { "title": "Szombat  este", "body": "A gyerekek Giacomo lakásában voltak. Mindenekellőtt nekik Moreno úr, de Bianchi asszony is gyanúsnak tűnt. A többiek nem voltak gyanúsak vagy volt alibijük. Giacomo úgy döntött, hogy ezen éjjel kimegy a kertbe figyelni az embereket akik belépnek és kijönnek. Simonának és Giacomónak volt egy rövid romantikus pillanatuk, legalábbis így érezte Giacomo, de tudta hogy még nem ez a megfelelő pillanat. Lement a kertbe és ott maradt két órát. Fél tízkor megérkezett Simona. Ez a két óra alatt csak egy furcsa dolog történt: Bianchi asszony és Moreno úr együtt voltak ott és ölelkeztek. A gyerekek így tudták, hogy szeretők. De Simona mondta, hogy mennie kell." },
     "rect7": { "title": "Vasárnap reggel", "body": "Simona mentette meg Giacomót. Felkelt éjjel és látta az ablakából, mi történik. Felhívta a rendőrséget, majd lement. Simonának sikerült lelassítania Moreno urat. Majd megérkezett a rendőrség és a gyerekek elmesélték a teljes történetet egy rendőrnek. Majd mindenki hazament a szüleivel. Másnap elmentek sétálni. Itt volt a megfelelő pillanat: Giacomo végre megcsókolta Simonát. Giacomo és Simona felmentek. Amikor elhaladtak Bianchi asszony ajtajánál, a nő behívta őket a lakásba. A gyerekek elmesélték Bianchi asszonynak a történetet, és Moreno úr letartóztatását. De hirtelen a nő egy pisztolyt fogott a két gyerekre. Kiderült, hogy Bianchi asszony ölte meg Cassi urat. Tudta a kapcsolatát Morenóval és el akarta mondani a férjének. De hirtelen valaki csöngetett. Giacomo nem vesztegette az időt. Előreugrott és a földre dobta a nőt. Küzdeni kezdtek, és végül sikerült kicsavarnia a kezéből a fegyvert. És így mindenre fény derült, mindennek vége van. Giacomo és Simona járni kezdtek." }
-  }
+    },
+    "blocks": {
+      "block1": {
+        "name": "Giacomo",
+        "title": "Giacomo",
+        "physical_title": "Fizikai kinézet",
+        "physical_body": "Giacomo 16 éves. Barna haja van, a szeme nincs részletesen leírva. Átlagos fiú, se nem túl magas, se nem túl alacsony.",
+        "character_title": "Tulajdonságok",
+        "character_body": "Félénk, kedves és kíváncsi. Segíteni és nyomozni akar. Bátor, amikor szükséges.",
+        "relations_title": "Kapcsolatok",
+        "relations_body": "Giacomo szerelmes Simonába. Jó kapcsolata van a családjával, és jól ismeri a szomszédokat.",
+        "body": "<strong>Fizikai kinézet</strong><p>Giacomo 16 éves. Barna haja van, a szeme nincs részletesen leírva. Átlagos fiú, se nem túl magas, se nem túl alacsony.</p><strong>Tulajdonságok</strong><p>Félénk, kedves és kíváncsi. Segíteni és nyomozni akar. Bátor, amikor szükséges.</p><strong>Kapcsolatok</strong><p>Giacomo szerelmes Simonába. Jó kapcsolata van a családjával, és jól ismeri a szomszédokat.</p>"
+      },
+      "block2": {
+        "name": "Simona",
+        "title": "Simona",
+        "physical_title": "Fizikai kinézet",
+        "physical_body": "Simona magas és vékony. Barna haja és kék szeme van. Fiatal, valószínűleg ugyanannyi idős, mint Giacomo, tehát 16 éves.",
+        "character_title": "Tulajdonságok",
+        "character_body": "Kedves, bátor és beszédes. Segít Giacomónak, és nem fél cselekedni, ha szükséges. Kíváncsi és okos.",
+        "relations_title": "Kapcsolatok",
+        "relations_body": "Simona Giacomo szerelme. Jó kapcsolata van a családjával, és Giacomo társává válik a nyomozásban.",
+        "body": "<strong>Fizikai kinézet</strong><p>Simona magas és vékony. Barna haja és kék szeme van. Fiatal, valószínűleg ugyanannyi idős, mint Giacomo, tehát 16 éves.</p><strong>Tulajdonságok</strong><p>Kedves, bátor és beszédes. Segít Giacomónak, és nem fél cselekedni, ha szükséges. Kíváncsi és okos.</p><strong>Kapcsolatok</strong><p>Simona Giacomo szerelme. Jó kapcsolata van a családjával, és Giacomo társává válik a nyomozásban.</p>"
+      },
+      "block3": {
+        "name": "Moreno",
+        "title": "Moreno",
+        "physical_title": "Fizikai kinézet",
+        "physical_body": "Moreno úr nagy és erős testalkatú. Vállai szélesek és izmosak. Nem óriási, de erősnek és robusztusnak tűnik. A haja nincs részletesen leírva.",
+        "character_title": "Tulajdonságok",
+        "character_body": "Nagyon aggódó és komoly. Képes gonosznak lenni, amikor szükséges, például amikor Giacomót összeköti és a csomagtartóba teszi. Néha kedves a családjával és a gyerekekkel.",
+        "relations_title": "Kapcsolatok",
+        "relations_body": "Moreno házas Moreno asszonnyal. Szerelmes Bianchi asszonyba, és részt vesz a gyilkossági ügy eseményeiben. Két kisgyermeke van.",
+        "body": "<strong>Fizikai kinézet</strong><p>Moreno úr nagy és erős testalkatú. Vállai szélesek és izmosak. Nem óriási, de erősnek és robusztusnak tűnik. A haja nincs részletesen leírva.</p><strong>Tulajdonságok</strong><p>Nagyon aggódó és komoly. Képes gonosznak lenni, amikor szükséges, például amikor Giacomót összeköti és a csomagtartóba teszi. Néha kedves a családjával és a gyerekekkel.</p><strong>Kapcsolatok</strong><p>Moreno házas Moreno asszonnyal. Szerelmes Bianchi asszonyba, és részt vesz a gyilkossági ügy eseményeiben. Két kisgyermeke van.</p>"
+      },
+      "block4": {
+        "name": "Bianchi",
+        "title": "Bianchi",
+        "physical_title": "Fizikai kinézet",
+        "physical_body": "Bianchi asszony nagyon szép nő. Zöld szeme van, szőke haja, vékony. Hosszú lábai vannak.",
+        "character_title": "Tulajdonságok",
+        "character_body": "Veszélyes és őrült. Határozott és bátor, de gonosz. Tudja, hogyan manipulálja az embereket.",
+        "relations_title": "Kapcsolatok",
+        "relations_body": "Bianchi asszonynak kapcsolata van Moreno úrral.",
+        "body": "<strong>Fizikai kinézet</strong><p>Bianchi asszony nagyon szép nő. Zöld szeme van, szőke haja, vékony. Hosszú lábai vannak.</p><strong>Tulajdonságok</strong><p>Veszélyes és őrült. Határozott és bátor, de gonosz. Tudja, hogyan manipulálja az embereket.</p><strong>Kapcsolatok</strong><p>Bianchi asszonynak kapcsolata van Moreno úrral.</p>"
+      },
+      "block5": {
+        "name": "Cassi",
+        "title": "Cassi",
+        "physical_title": "Fizikai kinézet",
+        "physical_body": "Cassi úr alacsony és vékony férfi, az arca mindig szürke. Több mint 50 éves, de idősebbnek tűnik.",
+        "character_title": "Tulajdonságok",
+        "character_body": "Zajos ember, mert szereti a hangos zenét. Nem figyel a szomszédokra és nem válaszol a levelekre.",
+        "relations_title": "Kapcsolatok",
+        "relations_body": "A Tulipánok utcai lakóházban él, és nehéz kapcsolata van a szomszédokkal.",
+        "body": "<strong>Fizikai kinézet</strong><p>Cassi úr alacsony és vékony férfi, az arca mindig szürke. Több mint 50 éves, de idősebbnek tűnik.</p><strong>Tulajdonságok</strong><p>Zajos ember, mert szereti a hangos zenét. Nem figyel a szomszédokra és nem válaszol a levelekre.</p><strong>Kapcsolatok</strong><p>A Tulipánok utcai lakóházban él, és nehéz kapcsolata van a szomszédokkal.</p>"
+      }
+    }
 }

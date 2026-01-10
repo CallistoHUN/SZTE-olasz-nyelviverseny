@@ -67,6 +67,63 @@
     "rect5": { "title": "Sabato notte", "body": "Giacomo è rimasto in giardino. A mezzanotte la signorina Valle è rientrata con il suo cane. Giacomo è stato già molto stanco, quando all’una è arrivato il signor Moreno con una borsa sportiva. Giacomo l’ha seguito nel garage. Il signor Moreno ha dimenticato qualcosa, così è ritornato in casa. Giacomo è andato velocemente nel garage e ha aperto la borsa. Nella borsa c’era una statuetta grossa e pesante – l’arma del delitto. Giacomo l’ha presa e ha cominciato a correre verso il palazzo. Ma davanti al portone c’era lui, il signor Moreno. Senza perdere un secondo, ha colpito Giacomo con un pugno e il ragazzo è caduto a terra svenuto. Quando Giacomo ha riaperto gli occhi, è stato nel garage. Poi il signor Moreno ha messo lui in macchina. Ma appena sono partiti, ha sentito il suono delle sirene delle auto della polizia. Dopo pochi minuti, i poliziotti hanno aperto il portabagagli." },
     "rect6": { "title": "Sabato sera", "body": "I ragazzi sono stati nell’appartamento di Giacomo. A loro sono sembrati sospetti soprattutto il signor Moreno, ma anche la signora Bianchi. Gli altri non erano sospetti oppure avevano un alibi. Giacomo ha deciso che quella sera scende in giardino e controlla la gente che entra ed esce. Simona e Giacomo hanno avuto un breve momento romantico, almeno così lo ha sentito Giacomo, ma sapeva che non era ancora il momento giusto. È sceso in giardino ed è rimasto lì due ore. Alle nove e mezza è arrivata Simona. Durante quelle due ore è successa solo una cosa strana: la signora Bianchi e il signor Moreno erano lì insieme e si sono abbracciati. I ragazzi hanno capito cosi, che sono amanti. Ma Simona ha detto che dove andare." },
     "rect7": { "title": "Domenica mattina", "body": "Simona ha salvato Giacomo. Di notte si è alzata e dalla sua finestra ha visto cosa succede. Ha chiamato la polizia e poi è scesata. Simona è riuscita a rallentare il signor Moreno. Poi è arrivata la polizia e i ragazzi hanno raccontato tutta la storia a un poliziotto. Dopo, tutti sono andati a casa dai loro genitori. Il giorno dopo sono andati a spasso. C’era il tempo giusto: Giacomo ha finalmente baciato Simona. Giacomo e Simona sono saliti le scale. Quando sono passati davanti all’appartamento della signora Bianchi, la signora li ha invitati nell’appartamento. I ragazzi hanno raccontato alla signora Bianchi la storia e l’arresto del signor Moreno. Ma subito lei ha puntato una pistola contro i due ragazzi. Si è scoperto che la signora Bianchi aveva ucciso il signor Cassi. Lui sapeva della sua relazione con Moreno e voleva dirlo a suo marito. Ma subito qualcuno ha suonato il campanello. Era la signorina Valle. La signora Bianchi ha girato la testa verso la porta. Giacomo non ha perso un secondo. È scattato in avanti e l’ha gettata a terra. Hanno lottato e lui è riuscito a toglierle la pistola di mano. E così è venuto tutto alla luce, tutto è finito. Giacomo e Simona hanno cominciato a uscire insieme." }
+  },
+  "blocks": {
+    "block1": {
+      "name": "Giacomo",
+      "title": "Giacomo",
+      "physical_title": "Aspetto fisico",
+      "physical_body": "Giacomo ha sedici anni. Ha capelli castani e occhi non specificati nel dettaglio. È un ragazzo normale, non molto alto né basso.",
+      "character_title": "Carattere",
+      "character_body": "È timido, gentile e curioso. Vuole aiutare e investigare. È coraggioso quando serve.",
+      "relations_title": "Relazioni",
+      "relations_body": "Giacomo è innamorato di Simona. Ha una buona relazione con la sua famiglia e conosce bene i vicini.",
+      "body": "<strong>Aspetto fisico</strong><p>Giacomo ha sedici anni. Ha capelli castani e occhi non specificati nel dettaglio. È un ragazzo normale, non molto alto né basso.</p><strong>Carattere</strong><p>È timido, gentile e curioso. Vuole aiutare e investigare. È coraggioso quando serve.</p><strong>Relazioni</strong><p>Giacomo è innamorato di Simona. Ha una buona relazione con la sua famiglia e conosce bene i vicini.</p>"
+    },
+    "block2": {
+      "name": "Simona",
+      "title": "Simona",
+      "physical_title": "Aspetto fisico",
+      "physical_body": "Simona è alta e snella. Ha capelli castani e occhi blu. È giovane, probabilmente della stessa età di Giacomo, cioè sedici anni.",
+      "character_title": "Carattere",
+      "character_body": "È gentile, coraggiosa e parlante. Aiuta Giacomo e non ha paura di agire quando è necessario. È curiosa e intelligente.",
+      "relations_title": "Relazioni",
+      "relations_body": "Simona è l’amore di Giacomo. Ha un buon rapporto con la sua famiglia e diventa alleata di Giacomo nelle indagini.",
+      "body": "<strong>Aspetto fisico</strong><p>Simona è alta e snella. Ha capelli castani e occhi blu. È giovane, probabilmente della stessa età di Giacomo, cioè sedici anni.</p><strong>Carattere</strong><p>È gentile, coraggiosa e parlante. Aiuta Giacomo e non ha paura di agire quando è necessario. È curiosa e intelligente.</p><strong>Relazioni</strong><p>Simona è l’amore di Giacomo. Ha un buon rapporto con la sua famiglia e diventa alleata di Giacomo nelle indagini.</p>"
+    },
+    "block3": {
+      "name": "Moreno",
+      "title": "Moreno",
+      "physical_title": "Aspetto fisico",
+      "physical_body": "Il signor Moreno ha una corporatura robusta e imponente. Le spalle sono larghe e muscolose. Non è enormemente alto, ma appare forte e massiccio. I dettagli sui capelli non sono specificati.",
+      "character_title": "Carattere",
+      "character_body": "Molto preoccupato e serio. Può essere crudele quando necessario, per esempio quando lega Giacomo e lo mette nel bagagliaio. A volte è gentile con la sua famiglia e i bambini.",
+      "relations_title": "Relazioni",
+      "relations_body": "Moreno è sposato con la signora Moreno. È innamorato della signora Bianchi e coinvolto negli eventi dell'omicidio. Ha due figli piccoli.",
+      "body": "<strong>Aspetto fisico</strong><p>Il signor Moreno ha una corporatura robusta e imponente. Le spalle sono larghe e muscolose. Non è enormemente alto, ma appare forte e massiccio. I dettagli sui capelli non sono specificati.</p><strong>Carattere</strong><p>Molto preoccupato e serio. Può essere crudele quando necessario, per esempio quando lega Giacomo e lo mette nel bagagliaio. A volte è gentile con la sua famiglia e i bambini.</p><strong>Relazioni</strong><p>Moreno è sposato con la signora Moreno. È innamorato della signora Bianchi e coinvolto negli eventi dell'omicidio. Ha due figli piccoli.</p>"
+    },
+    "block4": {
+      "name": "Bianchi",
+      "title": "Bianchi",
+      "physical_title": "Aspetto fisico",
+      "physical_body": "La signora Bianchi è una donna molto bella. Ha occhi verdi, capelli biondi e è snella. Ha gambe lunghe.",
+      "character_title": "Carattere",
+      "character_body": "È pericolosa e pazza. È decisa e coraggiosa, ma cattiva. Sa come manipolare le persone.",
+      "relations_title": "Relazioni",
+      "relations_body": "La signora Bianchi ha una relazione con il signor Moreno.",
+      "body": "<strong>Aspetto fisico</strong><p>La signora Bianchi è una donna molto bella. Ha occhi verdi, capelli biondi e è snella. Ha gambe lunghe.</p><strong>Carattere</strong><p>È pericolosa e pazza. È decisa e coraggiosa, ma cattiva. Sa come manipolare le persone.</p><strong>Relazioni</strong><p>La signora Bianchi ha una relazione con il signor Moreno.</p>"
+    },
+    "block5": {
+      "name": "Cassi",
+      "title": "Cassi",
+      "physical_title": "Aspetto fisico",
+      "physical_body": "Il signor Cassi è un uomo piccolo e magro, con la faccia sempre grigia. Ha più di cinquant'anni, ma sembra più vecchio.",
+      "character_title": "Carattere",
+      "character_body": "È una persona rumorosa perché ama la musica alta. Non ascolta i vicini e non risponde alle lettere.",
+      "relations_title": "Relazioni",
+      "relations_body": "Vive nel palazzo di Via dei Tulipani e ha rapporti difficili con i vicini.",
+      "body": "<strong>Aspetto fisico</strong><p>Il signor Cassi è un uomo piccolo e magro, con la faccia sempre grigia. Ha più di cinquant'anni, ma sembra più vecchio.</p><strong>Carattere</strong><p>È una persona rumorosa perché ama la musica alta. Non ascolta i vicini e non risponde alle lettere.</p><strong>Relazioni</strong><p>Vive nel palazzo di Via dei Tulipani e ha rapporti difficili con i vicini.</p>"
+    }
   }
 }
  

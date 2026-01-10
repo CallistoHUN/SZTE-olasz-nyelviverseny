@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Szereplők — Mistero in Via dei Tulipani</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="i18n.js" defer></script>
+    <meta name="description" content="Szereplők oldal — Mistero in Via dei Tulipani">
+    <style>
+        /* minimal mobile overlay copy so header layout matches other pages */
+        .mobile-overlay{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.7);color:#fff;z-index:9999;padding:20px;text-align:center;font-family:'Cormorant',serif;visibility:hidden;opacity:0;transition:opacity .2s ease,visibility .2s}
+        .mobile-overlay.visible{visibility:visible;opacity:1}
+        .mobile-overlay .message{background:rgba(0,0,0,0.6);padding:18px 24px;border-radius:12px;max-width:420px;width:90%;font-size:22px;line-height:1.3}
+        @media (min-width:420px){.mobile-overlay .message{font-size:24px}}
+        @media (min-width:800px){.mobile-overlay{display:none}}
+        /* ensure the big white area is visible regardless of site theme */
+        .big-white-area{background:#ffffff;min-height:2200px;width:100%;box-sizing:border-box}
+    </style>
+</head>
+<body>
+    <div id="mobileOverlay" class="mobile-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="message">Az oldal sajnos csak számítógépes nézetben elérhető :(</div>
+    </div>
+
+    <header class="main-header">
+        <div class="header-logo" id="headerLogo">
+            <img src="logo.png" alt="Weboldal logó" data-i18n-attr="alt:img.logo_alt" style="width: 600px; height: auto;">
+        </div>
+        <div class="header-menu" id="headerMenu">
+            <a href="index.html" class="menu-link" data-i18n="nav.home">Kezdőlap</a>
+            <a href="tortenet.html" class="menu-link" data-i18n="nav.story">Történet</a>
+            <a href="szereplok.html" class="menu-link" data-i18n="nav.characters">Szereplők</a>
+            <a href="rolam.html" class="menu-link" data-i18n="nav.about">Rólam</a>
+            <div class="lang-switch" role="group" aria-label="Language">
+                <button type="button" class="lang-btn" data-set-lang="hu" data-i18n="lang.hu" aria-pressed="true">HU</button>
+                <button type="button" class="lang-btn" data-set-lang="it" data-i18n="lang.it" aria-pressed="false">IT</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Felső, 500px fehér üres rész a kérése szerint -->
+        <div class="top-white-spacer" aria-hidden="true"></div>
+
+        <!-- Karakterek oldal: öt fehér téglalap egymás alatt -->
+        <div class="cards-inner" role="main">
+            <div class="header-bg-card card-right" aria-hidden="false">
+                <img class="card-media" src="profkep1.png" alt="Profilkép">
+                <div class="card-content">
+                    <h3 class="card-title" data-i18n="blocks.block1.title">Példa cím 1</h3>
+                    <div class="card-body" data-i18n-html="blocks.block1.body">Példa leírás 1 — rövid magyar leírás a karakterről.</div>
+                </div>
+            </div>
+
+            <div class="header-bg-card" aria-hidden="false">
+                <img class="card-media" src="profkep2.png" alt="Profilkép">
+                <div class="card-content">
+                    <h3 class="card-title" data-i18n="blocks.block2.title">Példa cím 2</h3>
+                    <div class="card-body" data-i18n-html="blocks.block2.body">Példa leírás 2 — rövid magyar leírás a karakterről.</div>
+                </div>
+            </div>
+
+            <div class="header-bg-card card-right" aria-hidden="false">
+                <img class="card-media" src="profkep3.png" alt="Profilkép">
+                <div class="card-content">
+                    <h3 class="card-title" data-i18n="blocks.block3.title">Példa cím 3</h3>
+                    <div class="card-body" data-i18n-html="blocks.block3.body">Példa leírás 3 — rövid magyar leírás a karakterről.</div>
+                </div>
+            </div>
+
+            <div class="header-bg-card" aria-hidden="false">
+                <img class="card-media" src="profkep4.png" alt="Profilkép">
+                <div class="card-content">
+                    <h3 class="card-title" data-i18n="blocks.block4.title">Példa cím 4</h3>
+                    <div class="card-body" data-i18n-html="blocks.block4.body">Példa leírás 4 — rövid magyar leírás a karakterről.</div>
+                </div>
+            </div>
+
+            <div class="header-bg-card card-right" aria-hidden="false">
+                <img class="card-media" src="profkep5.png" alt="Profilkép">
+                <div class="card-content">
+                    <h3 class="card-title" data-i18n="blocks.block5.title">Példa cím 5</h3>
+                    <div class="card-body" data-i18n-html="blocks.block5.body">Példa leírás 5 — rövid magyar leírás a karakterről.</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="site-footer-inner">
+            <p class="footer-text">&copy; Novográdecz Damján — Pannonhalma 2025-26</p>
+        </div>
+    </footer>
+
+    <!-- Importáljuk a fejléchez tartozó animációs/viselkedés scriptet (megegyezik az index/tortenet viselkedésével) -->
+    <script>
+        (function(){
+            const header = document.querySelector('.main-header');
+            if (!header) return;
+
+            const setHeaderOffset = () => {
+                const h = Math.ceil(header.getBoundingClientRect().height);
+                document.body.style.setProperty('--header-offset', `${h}px`);
+            };
+
+            const updateScrolledState = () => {
+                const isScrolled = window.scrollY > 10;
+                header.classList.toggle('scrolled', isScrolled);
+                setHeaderOffset();
+            };
+
+            let ticking = false;
+            const onScroll = () => {
+                if (ticking) return;
+                ticking = true;
+                window.requestAnimationFrame(() => {
+                    updateScrolledState();
+                    ticking = false;
+                });
+            };
+
+            window.addEventListener('scroll', onScroll, { passive: true });
+            window.addEventListener('resize', setHeaderOffset);
+            // init
+            updateScrolledState();
+        })();
+    </script>
+
+    <script>
+        (function(){
+            function isMobileDevice(){
+                if (window.matchMedia && window.matchMedia('(max-width:800px)').matches) return true;
+                const ua = navigator.userAgent || navigator.vendor || window.opera;
+                return /Mobi|Android|iPhone|iPad|iPod|Phone/i.test(ua);
+            }
+            function showMobileOverlay(){
+                const ov = document.getElementById('mobileOverlay');
+                if (!ov) return;
+                ov.classList.add('visible');
+                ov.setAttribute('aria-hidden','false');
+                document.documentElement.style.overflow = 'hidden';
+                document.body.style.overflow = 'hidden';
+            }
+            function init(){ if (isMobileDevice()) showMobileOverlay(); }
+            if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+        })();
+    </script>
+
+</body>
+</html>

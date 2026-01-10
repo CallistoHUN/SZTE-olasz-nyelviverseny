@@ -716,6 +716,86 @@ body.banner-visible .banner-overlay { opacity: 1; transform: translateX(-50%) tr
 body.banner-visible .banner-sub { opacity: 1; transform: translateY(0); }
 body.banner-visible .banner-cta { opacity: 1; transform: translateY(0); }
 
+/* Cards used on the szereplok (characters) page */
+.top-white-spacer {
+		height: 100px; /* reduced from 500px */
+	background: #ffffff;
+	width: 100%;
+	margin-bottom: 28px;
+}
+.cards-inner {
+	max-width: 1200px;
+	margin: 0 auto 48px auto;
+	padding: 20px 12px;
+}
+.header-bg-card {
+	background: var(--header-bg);
+	border-radius: 14px;
+	box-shadow: 0 22px 48px rgba(0,0,0,0.14);
+	padding: 36px 36px;
+	margin: 100px 12px; /* 50px top + 50px bottom = 100px between cards */
+	min-height: 380px;
+	transition: transform 200ms ease, box-shadow 200ms ease;
+	border: 1px solid rgba(0,0,0,0.08); /* subtle border to increase contrast */
+}
+.header-bg-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 36px 72px rgba(0,0,0,0.18);
+}
+.cards-inner .header-bg-card { width: calc(100% - 24px); }
+
+@media (max-width: 900px) {
+	.cards-inner { padding: 8px; }
+	.header-bg-card { padding: 22px; margin: 18px 6px; min-height: 260px; }
+}
+
+/* Card internal typography */
+.header-bg-card .card-title {
+	font-family: var(--font-heading);
+	font-weight: 700;
+	font-size: 28px;
+	margin: 0 0 12px 0;
+	color: var(--text-primary);
+}
+.header-bg-card .card-body {
+	font-family: var(--font-body);
+	color: #3a3a3a; /* sötétebb, majdnem fekete szöveg a dobozokban */
+	line-height: 1.6;
+	font-size: 17px;
+}
+
+/* Layout for media inside cards (alternating left/right) */
+.header-bg-card {
+	display: flex;
+	align-items: center;
+	gap: 28px;
+}
+.header-bg-card.card-right {
+	flex-direction: row-reverse;
+}
+.card-media {
+	flex: 0 0 320px;
+	width: 320px;
+	height: 320px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.card-content {
+	flex: 1 1 auto;
+}
+
+@media (max-width: 900px) {
+	.header-bg-card { display: block; }
+	.card-media { width: 100%; height: auto; margin: 0 0 16px 0; flex: none; }
+	.card-content { width: 100%; }
+}
+
+@media (max-width: 900px) {
+	.header-bg-card .card-title { font-size: 22px; }
+	.header-bg-card .card-body { font-size: 16px; }
+}
+
 @media (max-width: 520px) {
 	.banner-title { font-size: 20px; }
 	.banner-sub { font-size: 12px; }

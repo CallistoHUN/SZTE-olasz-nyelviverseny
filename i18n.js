@@ -23,16 +23,17 @@
 	};
 
 	// Determine absolute base path for the `i18n` folder so fetch() uses
-	// root-relative URLs (works for user pages and project pages on GH Pages).
+	// Determine base path for the `i18n` folder.
+	// Use a relative path first to work for both root and nested pages on GitHub Pages.
 	const getI18nBasePath = () => {
-		const p = window.location.pathname || '/';
-		const segments = p.split('/').filter(Boolean);
-		// If there are no path segments -> site root
-		if (segments.length === 0) return '/i18n/';
-		// If first segment looks like a filename (contains a dot), treat site root
-		if (segments[0].includes('.')) return '/i18n/';
-		// Otherwise first segment is likely the repo name on project pages
-		return `/${segments[0]}/i18n/`;
+		try {
+			// Prefer relative path from current document, which will resolve to
+			// /<repo>/i18n/ when the page is at /<repo>/tortenet.html and to
+			// /i18n/ when served at site root.
+			return './i18n/';
+		} catch (e) {
+			return '/i18n/';
+		}
 	};
 
 	const fetchJson = async (url) => {

@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "title": "SZTE Olasz nyelvi verseny - Pályamunka",
+    "description": "Kreatív pályamunka a 2025-26-os évi SZTE Olasz nyelvi verseny második fordulójára. Feldolgozott olvasmány: Mistero in Via dei Tulipani. Készítette: Novográdecz Damján."
+  },
+  "lang": {
+    "hu": "HU",
+    "it": "IT"
+  },
+  "nav": {
+    "home": "Kezdőlap",
+    "story": "Történet",
+    "characters": "Szereplők",
+    "about": "Rólam"
+  },
+  "img": {
+    "logo_alt": "Weboldal logó",
+    "banner_alt": "Gyanús autó éjszaka banner"
+  },
+  "section": {
+    "ajanlo": {
+      "title": "Könyvajánló",
+      "body": "Ez a könyv egy krimi. Szereted a krimiket? Ajánlom neked ezt a könyvet, ha szeretsz olvasni idegen nyelven. Tökéletes a gyakorlásra és új szavak tanulására. Ha nem tanulod a nyelvet régóta, ne aggódj, mert ezt a könyvet azoknak írták, akik csak egy-két éve kezdték az olaszt. Sok spoiler található ezen az oldalon, így ha szeretnéd elolvasni a könyvet, <a href=\"tortenet.html\">kattints ide</a>!"
+    },
+    "story": {
+      "title": "Történet",
+      "body": "A könyv egy kitalált történetet mesél el. A főszereplők Giacomo és Simona, egy fiú és egy lány. A Tulipán utcában egy gyilkosság történik: Szombat reggel Valle kisasszony találja meg Cassi úr holttesttét – ő egy furcsa, alacsony és sovány férfia, aki mindig nagyon hangosan hallgat zenét. A rendőrség Cassi úr barátait gyanúsítja, de Giacomo és Simona szerint Cassit a szomszédaik egyike ölhette meg. Ezért nyomozásba kezdenek. Giacomo terve hatékony: Az összes szomszéduktól cukrot kérnek. És így tudnak információkat gyűjteni. Kettő gyanús személyt találnak: Bianchi asszonyt és Moreno urat. Giacomo úgy dönt, éjszakára lemegy a kertbe és kellő ideig ott marad. Nézi ki jön be-ki. És meglepetéssel látja, hogy Bianchi asszony és Moreno úr megölelik egymást. Hiszen ők szeretők!<br>Éjjel egykor Giacomo észreveszi Morena urat egy sporttáskával. A férfit a garázsba követi. És a táskában megtalálja a gyilkos fegyvert: egy szobrocskát! Giacomo megpróbál gyorsan elfutni, de egy csak egy pillanat, és a fiú eszméletlenül a földre zuhan.<br>Mi történt azután? Figyelem: Még van csavar a történetben! Olvasd el a teljes összefoglalót <a href=\"tortenet.html\">itt</a>!"
+    }
+  },
+  "story": {
+    "venerdi": {
+      "title": "Venerdí sera",
+      "body": "Itt kerül majd a magyar szöveg a 'Venerdí sera' részhez."
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 Novográdecz Damján"
+  }
+  ,
+  "banner": {
+    "title": "Mistero in Via dei Tulipani",
+    "subtitle": "Nem minden szomszéd ártatlan.",
+    "cta": "Fedezd fel a történetet"
+  }
+  ,
+  "tabs": {
+    "storia": {
+      "title": "Történet",
+      "body": "Ezen az oldalon a történet egy részletes összefoglalóját találod. Csináltam egy timeline-t is és beraktam képeket is, hogy jobban lehessen követni a történetet."
+    },
+    "personaggi": {
+      "title": "Szereplők",
+    ,
+    "rects": {
+      "rect1": { "title": "Cím 1", "body": "Itt a magyar szöveg az 1. téglalaphoz." },
+      "rect2": { "title": "Cím 2", "body": "Itt a magyar szöveg a 2. téglalaphoz." },
+      "rect3": { "title": "Cím 3", "body": "Itt a magyar szöveg a 3. téglalaphoz." },
+      "rect4": { "title": "Cím 4", "body": "Itt a magyar szöveg a 4. téglalaphoz." },
+      "rect5": { "title": "Cím 5", "body": "Itt a magyar szöveg az 5. téglalaphoz." },
+      "rect6": { "title": "Cím 6", "body": "Itt a magyar szöveg a 6. téglalaphoz." },
+      "rect7": { "title": "Cím 7", "body": "Itt a magyar szöveg a 7. téglalaphoz." }
+    }
+      "body": "Az oldalon a szereplők elemzése található. Hogy néz ki – alakja, haja, szeme... Milyen a személyisége – félénk, eszes, ügyes... Ezenkívül láthatod a kapcsolatait més személyekkel – szeretők, barátok, ellenségek..."
+    },
+    "chisono": {
+      "title": "Rólam",
+      "body": "Egy extra oldal, ahol információkat találsz a projektről, rólam, és a munka forrásairól."
+    }
+  }
+}
